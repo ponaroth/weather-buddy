@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--https://openweathermap.org/weather-conditions What each weather_condition variable is based off of.-->
+    <declare-styleable name="MyImageView">
+        <attr name="weather_condition" format="string" />
+    </declare-styleable>
+</resources>

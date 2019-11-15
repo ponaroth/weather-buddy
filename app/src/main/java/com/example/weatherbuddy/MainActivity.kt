@@ -4,9 +4,12 @@ import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
-import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
+import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
+import com.example.weatherbuddy.AvatarViewModel
 import org.json.JSONObject
 import java.net.URL
 
@@ -15,11 +18,30 @@ class MainActivity : AppCompatActivity() {
     val CITY: String = "Los Angeles,US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
 
+    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var viewModel: AvatarViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //bind activity_main.xml
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
         weatherTask().execute()
+
+        //Initialize AvatarViewModel
+        viewModel = ViewModelProviders.of(this).get(AvatarViewModel::class.java)
+
+        //set the data binding to have the initialized AvatarViewModel
+        binding.avatarViewModel = viewModel
+
+
+
+        //current activity is lifecycle owner of binding, binding can observe LiveData updates
+        binding.lifecycleOwner = this
+
 
     }
 
@@ -28,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             super.onPreExecute()
             // Showing the ProgressBar, Making the main design GONE
             findViewById<ProgressBar>(R.id.loader).visibility = View.VISIBLE
-            findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.GONE
+            //findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.GONE
             findViewById<TextView>(R.id.errorText).visibility = View.GONE
         }
 
@@ -75,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
                 // Views populated, Hiding the loader, Showing the main design
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
-                findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
+                //findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
 
             } catch (e: Exception) {
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
