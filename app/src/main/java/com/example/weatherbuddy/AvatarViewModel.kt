@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import com.androdocs.weatherbuddy.R
 import kotlinx.android.synthetic.main.activity_main.view.*
 
+//practice change
 
 /*
 * ViewModel for the changing image avatar whose image changes based of the states of
