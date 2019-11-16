@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--https://stackoverflow.com/a/18131705 Creating this custom StateDrawableList was a pain in the ass.-->
+<!--https://openweathermap.org/weather-conditions What each weather_condition variable is based off of.-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto">
+
+    <!--Thunderstorm -->
+    <item example:weather_condition="200" android:drawable="@color/t1"></item>
+    <item example:weather_condition="201" android:drawable="@color/t2"></item>
+    <item example:weather_condition="202" android:drawable="@color/t3"></item>
+    <item example:weather_condition="210" android:drawable="@color/t4"></item>
+    <item example:weather_condition="211" android:drawable="@color/t5"></item>
+    <item example:weather_condition="212" android:drawable="@color/t6"></item>
+    <item example:weather_condition="221" android:drawable="@color/t7"></item>
+    <item example:weather_condition="230" android:drawable="@color/t8"></item>
+    <item example:weather_condition="231" android:drawable="@color/t9"></item>
+    <item example:weather_condition="232" android:drawable="@color/t10"></item>
+
+    <!--Drizzle -->
+    <item example:weather_condition="300" android:drawable="@color/d1"></item>
+    <item example:weather_condition="301" android:drawable="@color/d2"></item>
+    <item example:weather_condition="302" android:drawable="@color/d3"></item>
+    <item example:weather_condition="310" android:drawable="@color/d4"></item>
+    <item example:weather_condition="311" android:drawable="@color/d5"></item>
+    <item example:weather_condition="312" android:drawable="@color/d6"></item>
+    <item example:weather_condition="313" android:drawable="@color/d7"></item>
+    <item example:weather_condition="314" android:drawable="@color/d8"></item>
+    <item example:weather_condition="321" android:drawable="@color/d9"></item>
+
+    <!--Rain -->
+    <item example:weather_condition="500" android:drawable="@color/r1"></item>
+    <item example:weather_condition="501" android:drawable="@color/r2"></item>
+    <item example:weather_condition="502" android:drawable="@color/r3"></item>
+    <item example:weather_condition="503" android:drawable="@color/r4"></item>
+    <item example:weather_condition="504" android:drawable="@color/r5"></item>
+    <item example:weather_condition="511" android:drawable="@color/r6"></item>
+    <item example:weather_condition="520" android:drawable="@color/r7"></item>
+    <item example:weather_condition="521" android:drawable="@color/r8"></item>
+    <item example:weather_condition="522" android:drawable="@color/r9"></item>
+    <item example:weather_condition="531" android:drawable="@color/r10"></item>
+
+    <!--Snow -->
+    <item example:weather_condition="600" android:drawable="@color/s1"></item>
+    <item example:weather_condition="601" android:drawable="@color/s2"></item>
+    <item example:weather_condition="602" android:drawable="@color/s3"></item>
+    <item example:weather_condition="611" android:drawable="@color/s4"></item>
+    <item example:weather_condition="612" android:drawable="@color/s5"></item>
+    <item example:weather_condition="613" android:drawable="@color/s6"></item>
+    <item example:weather_condition="615" android:drawable="@color/s7"></item>
+    <item example:weather_condition="616" android:drawable="@color/s8"></item>
+    <item example:weather_condition="620" android:drawable="@color/s9"></item>
+    <item example:weather_condition="621" android:drawable="@color/s10"></item>
+    <item example:weather_condition="622" android:drawable="@color/s11"></item>
+
+    <!--Atmosphere -->
+    <item example:weather_condition="701" android:drawable="@color/a1"></item>
+    <item example:weather_condition="711" android:drawable="@color/a2"></item>
+    <item example:weather_condition="721" android:drawable="@color/a3"></item>
+    <item example:weather_condition="731" android:drawable="@color/a4"></item>
+    <item example:weather_condition="741" android:drawable="@color/a5"></item>
+    <item example:weather_condition="751" android:drawable="@color/a6"></item>
+    <item example:weather_condition="761" android:drawable="@color/a7"></item>
+    <item example:weather_condition="762" android:drawable="@color/a8"></item>
+    <item example:weather_condition="771" android:drawable="@color/a9"></item>
+    <item example:weather_condition="781" android:drawable="@color/a10"></item>
+
+    <!--Clear -->
+    <item example:weather_condition="800" android:drawable="@color/n1"></item>
+
+    <!--Clouds -->
+    <item example:weather_condition="801" android:drawable="@color/c1"></item>
+    <item example:weather_condition="802" android:drawable="@color/c2"></item>
+    <item example:weather_condition="803" android:drawable="@color/c3"></item>
+    <item example:weather_condition="804" android:drawable="@color/c4"></item>
+
+
+
+</selector>

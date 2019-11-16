@@ -1,36 +1,56 @@
-package com.androdocs.weatherapp
+package com.androdocs.weatherbuddy
 
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
-import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
+import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
+import com.example.weatherbuddy.AvatarViewModel
 import org.json.JSONObject
 import java.net.URL
-import java.text.SimpleDateFormat
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     val CITY: String = "Los Angeles,US"
-    val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5" // API key
+    val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
+
+    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var viewModel: AvatarViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //bind activity_main.xml
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
         weatherTask().execute()
+
+        //Initialize AvatarViewModel
+        viewModel = ViewModelProviders.of(this).get(AvatarViewModel::class.java)
+
+        //set the data binding to have the initialized AvatarViewModel
+        binding.avatarViewModel = viewModel
+
+
+
+        //current activity is lifecycle owner of binding, binding can observe LiveData updates
+        binding.lifecycleOwner = this
+
 
     }
 
     inner class weatherTask() : AsyncTask<String, Void, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
-            /* Showing the ProgressBar, Making the main design GONE */
+            // Showing the ProgressBar, Making the main design GONE
             findViewById<ProgressBar>(R.id.loader).visibility = View.VISIBLE
-            findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.GONE
+            //findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.GONE
             findViewById<TextView>(R.id.errorText).visibility = View.GONE
         }
 
@@ -49,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
             try {
-                /* Extracting JSON returns from the API */
+                // Extracting JSON returns from the API
                 val jsonObj = JSONObject(result)
                 val main = jsonObj.getJSONObject("main")
                 val sys = jsonObj.getJSONObject("sys")
@@ -65,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
 
-                /* Populating extracted data into our views */
+                // Populating extracted data into our views
                 findViewById<TextView>(R.id.address).text = address
                 findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
                 findViewById<TextView>(R.id.temp).text = temp
@@ -75,9 +95,9 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.wind).text = windSpeed
                 findViewById<TextView>(R.id.humidity).text = humidity
 
-                /* Views populated, Hiding the loader, Showing the main design */
+                // Views populated, Hiding the loader, Showing the main design
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
-                findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
+                //findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
 
             } catch (e: Exception) {
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
