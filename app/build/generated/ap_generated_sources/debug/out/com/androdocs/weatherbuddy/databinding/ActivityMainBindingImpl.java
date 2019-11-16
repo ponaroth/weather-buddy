@@ -14,17 +14,19 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.androidAvatar, 1);
-        sViewsWithIds.put(R.id.overviewContainer, 2);
-        sViewsWithIds.put(R.id.address, 3);
-        sViewsWithIds.put(R.id.temp, 4);
-        sViewsWithIds.put(R.id.status, 5);
-        sViewsWithIds.put(R.id.temp_min, 6);
-        sViewsWithIds.put(R.id.temp_max, 7);
-        sViewsWithIds.put(R.id.wind, 8);
-        sViewsWithIds.put(R.id.humidity, 9);
-        sViewsWithIds.put(R.id.loader, 10);
-        sViewsWithIds.put(R.id.errorText, 11);
+        sViewsWithIds.put(R.id.today_textView, 1);
+        sViewsWithIds.put(R.id.date_textView, 2);
+        sViewsWithIds.put(R.id.androidAvatar, 3);
+        sViewsWithIds.put(R.id.overviewContainer, 4);
+        sViewsWithIds.put(R.id.address, 5);
+        sViewsWithIds.put(R.id.temp, 6);
+        sViewsWithIds.put(R.id.status, 7);
+        sViewsWithIds.put(R.id.temp_min, 8);
+        sViewsWithIds.put(R.id.temp_max, 9);
+        sViewsWithIds.put(R.id.wind, 10);
+        sViewsWithIds.put(R.id.humidity, 11);
+        sViewsWithIds.put(R.id.loader, 12);
+        sViewsWithIds.put(R.id.errorText, 13);
     }
     // views
     // variables
@@ -33,22 +35,24 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[3]
-            , (com.example.weatherbuddy.MyImageView) bindings[1]
-            , (android.widget.TextView) bindings[11]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.ProgressBar) bindings[10]
-            , (android.widget.LinearLayout) bindings[2]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.TextView) bindings[5]
-            , (android.widget.TextView) bindings[4]
+            , (com.example.weatherbuddy.MyImageView) bindings[3]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.ProgressBar) bindings[12]
+            , (android.widget.LinearLayout) bindings[4]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[10]
             );
         this.relativeLayout.setTag(null);
         setRootTag(root);

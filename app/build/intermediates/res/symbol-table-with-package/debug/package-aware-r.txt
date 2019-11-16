@@ -758,6 +758,7 @@ id contentPanel
 id custom
 id customPanel
 id dataBinding
+id date_textView
 id decor_content_parent
 id default_activity_button
 id dimensions
@@ -861,6 +862,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id today_textView
 id top
 id topPanel
 id uniform

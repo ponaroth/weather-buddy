@@ -27,6 +27,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final MyImageView androidAvatar;
 
   @NonNull
+  public final TextView dateTextView;
+
+  @NonNull
   public final TextView errorText;
 
   @NonNull
@@ -54,6 +57,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView tempMin;
 
   @NonNull
+  public final TextView todayTextView;
+
+  @NonNull
   public final TextView wind;
 
   @Bindable
@@ -63,12 +69,14 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected AvatarViewModel mAvatarViewModel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView address, MyImageView androidAvatar, TextView errorText, TextView humidity,
-      ProgressBar loader, LinearLayout overviewContainer, ConstraintLayout relativeLayout,
-      TextView status, TextView temp, TextView tempMax, TextView tempMin, TextView wind) {
+      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
+      TextView humidity, ProgressBar loader, LinearLayout overviewContainer,
+      ConstraintLayout relativeLayout, TextView status, TextView temp, TextView tempMax,
+      TextView tempMin, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
+    this.dateTextView = dateTextView;
     this.errorText = errorText;
     this.humidity = humidity;
     this.loader = loader;
@@ -78,6 +86,7 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.temp = temp;
     this.tempMax = tempMax;
     this.tempMin = tempMin;
+    this.todayTextView = todayTextView;
     this.wind = wind;
   }
 
