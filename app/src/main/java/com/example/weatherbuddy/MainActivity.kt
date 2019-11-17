@@ -3,8 +3,7 @@ package com.androdocs.weatherbuddy
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
-import android.widget.ProgressBar
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
@@ -41,6 +40,33 @@ class MainActivity : AppCompatActivity() {
 
         //current activity is lifecycle owner of binding, binding can observe LiveData updates
         binding.lifecycleOwner = this
+
+
+
+        // get reference to ImageView
+        val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
+        // set on-click listener
+        iv_click_me.setOnClickListener {
+            // your code to perform when the user clicks on the ImageView
+//            Toast.makeText(this@MainActivity, "You clicked on ImageView.", Toast.LENGTH_SHORT)
+//                .show()
+
+//            We add code here for menu
+            //Creating the instance of PopupMenu
+            val popup = PopupMenu(this@MainActivity, iv_click_me)
+//            //Inflating the Popup using xml file
+            popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
+
+            //registering popup with OnMenuItemClickListener
+//            popup.setOnMenuItemClickListener { item ->
+//                Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT)
+//                    .show()
+            true
+//            }
+
+            popup.show()//showing popup menu
+//            We end code here for menu
+        }
 
 
     }
