@@ -794,8 +794,10 @@ id line3
 id listMode
 id list_item
 id loader
+id maxTemp
 id message
 id middle
+id minTemp
 id multiply
 id never
 id none
@@ -854,8 +856,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id temp
-id temp_max
-id temp_min
 id text
 id text2
 id textSpacerNoButtons

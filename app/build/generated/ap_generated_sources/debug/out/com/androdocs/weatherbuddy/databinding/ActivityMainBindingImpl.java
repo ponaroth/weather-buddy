@@ -21,8 +21,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.address, 5);
         sViewsWithIds.put(R.id.temp, 6);
         sViewsWithIds.put(R.id.status, 7);
-        sViewsWithIds.put(R.id.temp_min, 8);
-        sViewsWithIds.put(R.id.temp_max, 9);
+        sViewsWithIds.put(R.id.minTemp, 8);
+        sViewsWithIds.put(R.id.maxTemp, 9);
         sViewsWithIds.put(R.id.wind, 10);
         sViewsWithIds.put(R.id.humidity, 11);
         sViewsWithIds.put(R.id.loader, 12);
@@ -47,12 +47,12 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (android.widget.ImageView) bindings[14]
             , (android.widget.TextView) bindings[11]
             , (android.widget.ProgressBar) bindings[12]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[8]
             , (android.widget.LinearLayout) bindings[4]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[9]
-            , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[10]
             );

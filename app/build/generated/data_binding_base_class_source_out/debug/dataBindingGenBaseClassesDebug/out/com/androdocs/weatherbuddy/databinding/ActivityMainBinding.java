@@ -43,6 +43,12 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final ProgressBar loader;
 
   @NonNull
+  public final TextView maxTemp;
+
+  @NonNull
+  public final TextView minTemp;
+
+  @NonNull
   public final LinearLayout overviewContainer;
 
   @NonNull
@@ -53,12 +59,6 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final TextView temp;
-
-  @NonNull
-  public final TextView tempMax;
-
-  @NonNull
-  public final TextView tempMin;
 
   @NonNull
   public final TextView todayTextView;
@@ -74,9 +74,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
-      ImageView hamburgermenu, TextView humidity, ProgressBar loader,
-      LinearLayout overviewContainer, ConstraintLayout relativeLayout, TextView status,
-      TextView temp, TextView tempMax, TextView tempMin, TextView todayTextView, TextView wind) {
+      ImageView hamburgermenu, TextView humidity, ProgressBar loader, TextView maxTemp,
+      TextView minTemp, LinearLayout overviewContainer, ConstraintLayout relativeLayout,
+      TextView status, TextView temp, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
@@ -85,12 +85,12 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.hamburgermenu = hamburgermenu;
     this.humidity = humidity;
     this.loader = loader;
+    this.maxTemp = maxTemp;
+    this.minTemp = minTemp;
     this.overviewContainer = overviewContainer;
     this.relativeLayout = relativeLayout;
     this.status = status;
     this.temp = temp;
-    this.tempMax = tempMax;
-    this.tempMin = tempMin;
     this.todayTextView = todayTextView;
     this.wind = wind;
   }
