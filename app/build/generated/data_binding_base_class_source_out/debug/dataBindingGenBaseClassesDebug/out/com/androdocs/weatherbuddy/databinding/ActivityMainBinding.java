@@ -4,6 +4,7 @@ package com.androdocs.weatherbuddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -31,6 +32,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final TextView errorText;
+
+  @NonNull
+  public final ImageView hamburgermenu;
 
   @NonNull
   public final TextView humidity;
@@ -70,14 +74,15 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
-      TextView humidity, ProgressBar loader, LinearLayout overviewContainer,
-      ConstraintLayout relativeLayout, TextView status, TextView temp, TextView tempMax,
-      TextView tempMin, TextView todayTextView, TextView wind) {
+      ImageView hamburgermenu, TextView humidity, ProgressBar loader,
+      LinearLayout overviewContainer, ConstraintLayout relativeLayout, TextView status,
+      TextView temp, TextView tempMax, TextView tempMin, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
     this.dateTextView = dateTextView;
     this.errorText = errorText;
+    this.hamburgermenu = hamburgermenu;
     this.humidity = humidity;
     this.loader = loader;
     this.overviewContainer = overviewContainer;

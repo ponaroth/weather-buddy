@@ -27,6 +27,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.humidity, 11);
         sViewsWithIds.put(R.id.loader, 12);
         sViewsWithIds.put(R.id.errorText, 13);
+        sViewsWithIds.put(R.id.hamburgermenu, 14);
     }
     // views
     // variables
@@ -35,7 +36,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -43,6 +44,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (com.example.weatherbuddy.MyImageView) bindings[3]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[13]
+            , (android.widget.ImageView) bindings[14]
             , (android.widget.TextView) bindings[11]
             , (android.widget.ProgressBar) bindings[12]
             , (android.widget.LinearLayout) bindings[4]

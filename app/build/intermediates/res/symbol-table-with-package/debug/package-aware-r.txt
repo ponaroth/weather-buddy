@@ -685,6 +685,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable bg_gradient
+drawable hamburger_icon
 drawable ic_android_logo
 drawable ic_android_logo_body
 drawable ic_android_logo_head
@@ -776,6 +777,7 @@ id forever
 id gone
 id group_divider
 id groups
+id hamburgermenu
 id home
 id homeAsUp
 id humidity
@@ -803,6 +805,7 @@ id notification_main_column
 id notification_main_column_container
 id onAttachStateChangeListener
 id onDateChanged
+id one
 id overviewContainer
 id packed
 id parent
@@ -858,6 +861,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textWatcher
+id three
 id time
 id title
 id titleDividerNoCustom
@@ -865,6 +869,7 @@ id title_template
 id today_textView
 id top
 id topPanel
+id two
 id uniform
 id up
 id useLogo
@@ -916,6 +921,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
