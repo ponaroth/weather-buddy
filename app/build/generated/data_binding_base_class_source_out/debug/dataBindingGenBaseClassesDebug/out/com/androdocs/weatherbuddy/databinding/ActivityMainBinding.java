@@ -4,12 +4,13 @@ package com.androdocs.weatherbuddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -30,28 +31,31 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView errorText;
 
   @NonNull
+  public final ImageView hamburgermenu;
+
+  @NonNull
+  public final HorizontalScrollView horizontalScroll;
+
+  @NonNull
   public final TextView humidity;
 
   @NonNull
   public final ProgressBar loader;
 
   @NonNull
-  public final LinearLayout overviewContainer;
+  public final TextView maxTemp;
 
   @NonNull
-  public final ConstraintLayout relativeLayout;
+  public final TextView minTemp;
+
+  @NonNull
+  public final LinearLayout overviewContainer;
 
   @NonNull
   public final TextView status;
 
   @NonNull
   public final TextView temp;
-
-  @NonNull
-  public final TextView tempMax;
-
-  @NonNull
-  public final TextView tempMin;
 
   @NonNull
   public final TextView wind;
@@ -63,21 +67,35 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected AvatarViewModel mAvatarViewModel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
+<<<<<<< Updated upstream
       TextView address, MyImageView androidAvatar, TextView errorText, TextView humidity,
       ProgressBar loader, LinearLayout overviewContainer, ConstraintLayout relativeLayout,
       TextView status, TextView temp, TextView tempMax, TextView tempMin, TextView wind) {
+=======
+      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
+      ImageView hamburgermenu, HorizontalScrollView horizontalScroll, TextView humidity,
+      ProgressBar loader, TextView maxTemp, TextView minTemp, LinearLayout overviewContainer,
+      TextView status, TextView temp, TextView todayTextView, TextView wind) {
+>>>>>>> Stashed changes
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
     this.errorText = errorText;
+    this.hamburgermenu = hamburgermenu;
+    this.horizontalScroll = horizontalScroll;
     this.humidity = humidity;
     this.loader = loader;
+    this.maxTemp = maxTemp;
+    this.minTemp = minTemp;
     this.overviewContainer = overviewContainer;
-    this.relativeLayout = relativeLayout;
     this.status = status;
     this.temp = temp;
+<<<<<<< Updated upstream
     this.tempMax = tempMax;
     this.tempMin = tempMin;
+=======
+    this.todayTextView = todayTextView;
+>>>>>>> Stashed changes
     this.wind = wind;
   }
 

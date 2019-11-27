@@ -14,6 +14,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
+<<<<<<< Updated upstream
         sViewsWithIds.put(R.id.androidAvatar, 1);
         sViewsWithIds.put(R.id.overviewContainer, 2);
         sViewsWithIds.put(R.id.address, 3);
@@ -25,14 +26,34 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.humidity, 9);
         sViewsWithIds.put(R.id.loader, 10);
         sViewsWithIds.put(R.id.errorText, 11);
+=======
+        sViewsWithIds.put(R.id.today_textView, 1);
+        sViewsWithIds.put(R.id.date_textView, 2);
+        sViewsWithIds.put(R.id.hamburgermenu, 3);
+        sViewsWithIds.put(R.id.androidAvatar, 4);
+        sViewsWithIds.put(R.id.overviewContainer, 5);
+        sViewsWithIds.put(R.id.address, 6);
+        sViewsWithIds.put(R.id.temp, 7);
+        sViewsWithIds.put(R.id.status, 8);
+        sViewsWithIds.put(R.id.minTemp, 9);
+        sViewsWithIds.put(R.id.maxTemp, 10);
+        sViewsWithIds.put(R.id.wind, 11);
+        sViewsWithIds.put(R.id.humidity, 12);
+        sViewsWithIds.put(R.id.horizontalScroll, 13);
+        sViewsWithIds.put(R.id.loader, 14);
+        sViewsWithIds.put(R.id.errorText, 15);
+>>>>>>> Stashed changes
     }
     // views
+    @NonNull
+    private final android.widget.ScrollView mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+<<<<<<< Updated upstream
         this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
@@ -49,8 +70,30 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[8]
+=======
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+    }
+    private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (android.widget.TextView) bindings[6]
+            , (com.example.weatherbuddy.MyImageView) bindings[4]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.ImageView) bindings[3]
+            , (android.widget.HorizontalScrollView) bindings[13]
+            , (android.widget.TextView) bindings[12]
+            , (android.widget.ProgressBar) bindings[14]
+            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.LinearLayout) bindings[5]
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[11]
+>>>>>>> Stashed changes
             );
-        this.relativeLayout.setTag(null);
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
+        this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

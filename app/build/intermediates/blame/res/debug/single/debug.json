@@ -228,8 +228,17 @@
         "source": "C:\\Users\\Ashley\\.gradle\\caches\\transforms-2\\files-2.1\\e9ae3774108b833d755ef0f4d315c971\\appcompat-1.0.2\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
+<<<<<<< Updated upstream
         "merged": "D:\\AndroidStudioProjects\\weather-buddy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Ashley\\.gradle\\caches\\transforms-2\\files-2.1\\e9ae3774108b833d755ef0f4d315c971\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+=======
+        "merged": "/Users/owner/Desktop/weather-buddy/app/build/intermediates/res/merged/debug/menu_popup_menu.xml.flat",
+        "source": "/Users/owner/Desktop/weather-buddy/app/src/main/res/menu/popup_menu.xml"
+    },
+    {
+        "merged": "/Users/owner/Desktop/weather-buddy/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/Users/owner/.gradle/caches/transforms-2/files-2.1/e9ae3774108b833d755ef0f4d315c971/appcompat-1.0.2/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "D:\\AndroidStudioProjects\\weather-buddy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -740,8 +749,17 @@
         "source": "C:\\Users\\Ashley\\.gradle\\caches\\transforms-2\\files-2.1\\e9ae3774108b833d755ef0f4d315c971\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+<<<<<<< Updated upstream
         "merged": "D:\\AndroidStudioProjects\\weather-buddy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Ashley\\.gradle\\caches\\transforms-2\\files-2.1\\e9ae3774108b833d755ef0f4d315c971\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+=======
+        "merged": "/Users/owner/Desktop/weather-buddy/app/build/intermediates/res/merged/debug/drawable_hamburger_icon.png.flat",
+        "source": "/Users/owner/Desktop/weather-buddy/app/src/main/res/drawable/hamburger_icon.png"
+    },
+    {
+        "merged": "/Users/owner/Desktop/weather-buddy/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/owner/.gradle/caches/transforms-2/files-2.1/e9ae3774108b833d755ef0f4d315c971/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
+>>>>>>> Stashed changes
     },
     {
         "merged": "D:\\AndroidStudioProjects\\weather-buddy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",

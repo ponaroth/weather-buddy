@@ -13,8 +13,14 @@ public final class R {
         private id() {}
 
         public static final int dataBinding = 0x7f070032;
+<<<<<<< Updated upstream
         public static final int onAttachStateChangeListener = 0x7f07005d;
         public static final int onDateChanged = 0x7f07005e;
         public static final int textWatcher = 0x7f070095;
+=======
+        public static final int onAttachStateChangeListener = 0x7f070062;
+        public static final int onDateChanged = 0x7f070063;
+        public static final int textWatcher = 0x7f070098;
+>>>>>>> Stashed changes
     }
 }

@@ -25,7 +25,11 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
+<<<<<<< Updated upstream
       <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="D:\AndroidStudioProjects\weather-buddy\app\src\debug\kotlin;D:\AndroidStudioProjects\weather-buddy\app\src\debug\java;D:\AndroidStudioProjects\weather-buddy\app\src\release\kotlin;D:\AndroidStudioProjects\weather-buddy\app\src\release\java;D:\AndroidStudioProjects\weather-buddy\app\src\debugAndroidTest\kotlin;D:\AndroidStudioProjects\weather-buddy\app\src\debugUnitTest\kotlin;D:\AndroidStudioProjects\weather-buddy\app\src\releaseUnitTest\kotlin">
+=======
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Users/owner/Desktop/weather-buddy/app/src/debug/java;/Users/owner/Desktop/weather-buddy/app/src/release/kotlin;/Users/owner/Desktop/weather-buddy/app/src/release/java;/Users/owner/Desktop/weather-buddy/app/src/debugAndroidTest/kotlin;/Users/owner/Desktop/weather-buddy/app/src/debugUnitTest/kotlin;/Users/owner/Desktop/weather-buddy/app/src/releaseUnitTest/kotlin">
+>>>>>>> Stashed changes
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>

@@ -86,14 +86,22 @@ class MainActivity : AppCompatActivity() {
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
 
                 // Populating extracted data into our views
-                findViewById<TextView>(R.id.address).text = address
-                findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
-                findViewById<TextView>(R.id.temp).text = temp
-                findViewById<TextView>(R.id.temp_min).text = tempMin
-                findViewById<TextView>(R.id.temp_max).text = tempMax
+                //findViewById<TextView>(R.id.address).text = address
+                //findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
+                //findViewById<TextView>(R.id.temp).text = temp
+                //findViewById<TextView>(R.id.temp_min).text = tempMin
+                //findViewById<TextView>(R.id.temp_max).text = tempMax
+                //findViewById<TextView>(R.id.wind).text = windSpeed
+                //findViewById<TextView>(R.id.humidity).text = humidity
 
-                findViewById<TextView>(R.id.wind).text = windSpeed
-                findViewById<TextView>(R.id.humidity).text = humidity
+                // Populating extracted data into our views
+                binding.address.text = address
+                binding.status.text = weatherDescription.capitalize()
+                binding.temp.text = temp
+                binding.minTemp.text = tempMin //Changed temp_min to minTemp in xml
+                binding.maxTemp.text = tempMax //Changed temp_max to maxTemp in xml
+                binding.wind.text = windSpeed
+                binding.humidity.text = humidity
 
                 // Views populated, Hiding the loader, Showing the main design
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
