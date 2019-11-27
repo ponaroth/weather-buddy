@@ -4,13 +4,13 @@ package com.androdocs.weatherbuddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -31,10 +31,28 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView dateTextView;
 
   @NonNull
+  public final TextView day1;
+
+  @NonNull
+  public final TextView day2;
+
+  @NonNull
+  public final TextView day3;
+
+  @NonNull
+  public final TextView day4;
+
+  @NonNull
+  public final TextView day5;
+
+  @NonNull
   public final TextView errorText;
 
   @NonNull
   public final ImageView hamburgermenu;
+
+  @NonNull
+  public final HorizontalScrollView horizontalScroll;
 
   @NonNull
   public final TextView humidity;
@@ -50,9 +68,6 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final LinearLayout overviewContainer;
-
-  @NonNull
-  public final ConstraintLayout relativeLayout;
 
   @NonNull
   public final TextView status;
@@ -73,22 +88,28 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected AvatarViewModel mAvatarViewModel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
-      ImageView hamburgermenu, TextView humidity, ProgressBar loader, TextView maxTemp,
-      TextView minTemp, LinearLayout overviewContainer, ConstraintLayout relativeLayout,
+      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView day1,
+      TextView day2, TextView day3, TextView day4, TextView day5, TextView errorText,
+      ImageView hamburgermenu, HorizontalScrollView horizontalScroll, TextView humidity,
+      ProgressBar loader, TextView maxTemp, TextView minTemp, LinearLayout overviewContainer,
       TextView status, TextView temp, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
     this.dateTextView = dateTextView;
+    this.day1 = day1;
+    this.day2 = day2;
+    this.day3 = day3;
+    this.day4 = day4;
+    this.day5 = day5;
     this.errorText = errorText;
     this.hamburgermenu = hamburgermenu;
+    this.horizontalScroll = horizontalScroll;
     this.humidity = humidity;
     this.loader = loader;
     this.maxTemp = maxTemp;
     this.minTemp = minTemp;
     this.overviewContainer = overviewContainer;
-    this.relativeLayout = relativeLayout;
     this.status = status;
     this.temp = temp;
     this.todayTextView = todayTextView;

@@ -760,6 +760,11 @@ id custom
 id customPanel
 id dataBinding
 id date_textView
+id day1
+id day2
+id day3
+id day4
+id day5
 id decor_content_parent
 id default_activity_button
 id dimensions
@@ -780,6 +785,7 @@ id groups
 id hamburgermenu
 id home
 id homeAsUp
+id horizontalScroll
 id humidity
 id icon
 id icon_group
@@ -816,7 +822,6 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
-id relativeLayout
 id right
 id right_icon
 id right_side
@@ -966,6 +971,7 @@ string abc_toolbar_collapse_description
 string app_name
 string search_menu_title
 string status_bar_notification_info_overflow
+string tempDisplay
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
