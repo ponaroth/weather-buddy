@@ -11,6 +11,10 @@ import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import org.json.JSONObject
 import java.net.URL
+import java.sql.Time
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 //    hello
@@ -94,6 +98,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onPostExecute(result: String?) {
+            val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
+            val currentDate = sdf.format(Date())
+            System.out.println(" C DATE is  "+currentDate)
+
             super.onPostExecute(result)
             try {
                 // Extracting JSON returns from the API
@@ -121,6 +129,9 @@ class MainActivity : AppCompatActivity() {
 
                 findViewById<TextView>(R.id.wind).text = windSpeed
                 findViewById<TextView>(R.id.humidity).text = humidity
+
+                findViewById<TextView>(R.id.date_textView).text = currentDate
+
 
                 // Views populated, Hiding the loader, Showing the main design
                 findViewById<ProgressBar>(R.id.loader).visibility = View.GONE
