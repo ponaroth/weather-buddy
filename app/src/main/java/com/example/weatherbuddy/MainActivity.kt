@@ -13,6 +13,7 @@ import org.json.JSONObject
 import java.net.URL
 
 class MainActivity : AppCompatActivity() {
+//    hello
 
     val CITY: String = "Los Angeles,US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
