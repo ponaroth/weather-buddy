@@ -765,6 +765,7 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id drawer_layout
 id edit_query
 id end
 id errorText

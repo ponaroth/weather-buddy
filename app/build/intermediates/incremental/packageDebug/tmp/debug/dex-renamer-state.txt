@@ -1,7 +1,7 @@
-#Fri Dec 06 15:17:03 PST 2019
-base.0=/Users/margaritanuridjanian/Desktop/weather-buddy/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Fri Dec 06 21:00:18 PST 2019
+base.0=/Users/margaritanuridjanian/Desktop/navigation_project/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/margaritanuridjanian/Desktop/weather-buddy/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/Users/margaritanuridjanian/Desktop/navigation_project/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
