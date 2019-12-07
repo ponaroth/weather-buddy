@@ -740,6 +740,7 @@ id all
 id always
 id androidAvatar
 id async
+id back_to_one
 id barrier
 id beginning
 id blocking
@@ -749,6 +750,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id change_location_button
 id checkbox
 id chronometer
 id clip_horizontal
@@ -756,6 +758,7 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
+id current_location
 id custom
 id customPanel
 id dataBinding
@@ -786,6 +789,7 @@ id icon_group
 id ifRoom
 id image
 id info
+id inputEditText
 id invisible
 id italic
 id left
@@ -794,9 +798,11 @@ id line3
 id listMode
 id list_item
 id loader
+id location
 id message
 id middle
 id multiply
+id navigation
 id never
 id none
 id normal
@@ -911,6 +917,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_main2
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -924,6 +931,7 @@ layout support_simple_spinner_dropdown_item
 menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation navigation
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

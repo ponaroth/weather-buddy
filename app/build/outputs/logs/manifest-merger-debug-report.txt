@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/8017bea18c774b4b70b9e09944765a1d/databinding-adapters-3.5.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/f7f501075e57ac7266e222d9d3e654b1/databinding-runtime-3.5.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/e9ae3774108b833d755ef0f4d315c971/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
@@ -37,29 +37,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/margaritanuridjani
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/8b23317537ebe90a2a229e676ad91caa/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/c2eebe165acf9442a84162aac830e07c/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/2d0d7c2d9455c2e14c5e442172548106/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:1-26:12
 		INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-23:19
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-24:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/6102808b9ba7d8939166ec116dd388e7/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/6102808b9ba7d8939166ec116dd388e7/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/06386419a7865a4c3b8510f8cdcc006a/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
@@ -84,22 +84,26 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/marg
 		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.example.weatherbuddy.Main2Activity
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:9-84
+	android:name
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:19-72
 activity#com.androdocs.weatherbuddy.MainActivity
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:15:9-23:20
 	android:screenOrientation
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:16:13-49
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:17:13-49
 	android:name
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:19-73
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:18:17-68
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:20:17-76
+ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml

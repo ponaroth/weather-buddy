@@ -15,13 +15,16 @@ import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
 import java.nio.file.Files.delete
-
+import android.content.Intent
+import com.example.weatherbuddy.Main2Activity
 
 
 class MainActivity : AppCompatActivity() {
 //check if commits working
-    val CITY: String = "Los Angeles,US"
+//    var CITY: String = "Los Angeles,US"
+    var CITY: String = "London,GB"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
+    var id = 0
 
     private lateinit var binding: ActivityMainBinding
 
@@ -65,14 +68,44 @@ class MainActivity : AppCompatActivity() {
             popup.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
                 when(item.itemId) {
                     R.id.one ->
-                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
-                    R.id.two ->
-                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
-                    R.id.three ->
-                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+//                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                              id = 1
+                    R.id.two ->id = 2
+//                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                    R.id.three ->id=3
+//                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
                 }
+
+                if(id == 1){
+                    Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+                    val intent1 = Intent(this, Main2Activity::class.java)//firstActivity
+//                    val value = "value"
+                    intent1.putExtra("my_variable", CITY)
+                    startActivity(intent1)
+
+                }
+                else if(id == 2){
+                    Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+                    val intent1 = Intent(this, MainActivity::class.java)//firstActivity
+                    startActivity(intent1)
+
+                }
+                else if(id == 3){
+
+                }
+                else{
+                    Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+                    val intent1 = Intent(this, MainActivity::class.java)//firstActivity
+                    startActivity(intent1)
+                }
+
+
+
+
                 true
             })
+
+
 
 
             popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
@@ -88,6 +121,26 @@ class MainActivity : AppCompatActivity() {
 
             popup.show()//showing popup menu
 //            We end code here for menu
+
+
+
+
+        }
+
+        val extras = intent.extras
+
+        if (extras != null) {
+            val value = extras.getString("my_variable")
+            System.out.println(value)
+
+            if(value != CITY){
+                System.out.println("VALUE DOES NOT EQUAL CITY"+value+"not"+CITY)
+
+//                findViewById<TextView>(R.id.current_location).text = value
+                CITY = value
+                System.out.println("NEW CITY ADDED!City is now" + CITY)
+
+            }
 
 
         }
