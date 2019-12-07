@@ -95,6 +95,23 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+//    fun onMenuItemClick(item: MenuItem): Boolean {
+//        when (item.getItemId()) {
+//            R.id.one -> {
+////                archive(item)
+//                Toast.makeText(this@MainActivity, "You clicked on ImageView.", Toast.LENGTH_SHORT)
+//                    .show()
+//
+//                return true
+//            }
+//            R.id.two -> {
+////                delete(item)
+//                return true
+//            }
+//            else -> return false
+//        }
+//    }
+
     inner class weatherTask() : AsyncTask<String, Void, String>() {
         override fun onPreExecute() {
             super.onPreExecute()
