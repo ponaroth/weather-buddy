@@ -2,6 +2,7 @@ package com.androdocs.weatherbuddy
 
 import android.os.AsyncTask
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,9 @@ import org.json.JSONObject
 import java.net.URL
 import java.text.SimpleDateFormat
 import java.util.*
+import java.nio.file.Files.delete
+
+
 
 class MainActivity : AppCompatActivity() {
 //check if commits working
@@ -50,24 +54,42 @@ class MainActivity : AppCompatActivity() {
         // set on-click listener
         iv_click_me.setOnClickListener {
             // your code to perform when the user clicks on the ImageView
-//            Toast.makeText(this@MainActivity, "You clicked on ImageView.", Toast.LENGTH_SHORT)
-//                .show()
+            Toast.makeText(this@MainActivity, "You clicked on ImageView.", Toast.LENGTH_SHORT)
+                .show()
 
 //            We add code here for menu
             //Creating the instance of PopupMenu
-            val popup = PopupMenu(this@MainActivity, iv_click_me)
+            val popup = PopupMenu(this, iv_click_me)
 //            //Inflating the Popup using xml file
+
+            popup.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
+                when(item.itemId) {
+                    R.id.one ->
+                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                    R.id.two ->
+                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                    R.id.three ->
+                        Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                }
+                true
+            })
+
+
             popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
+
+
 
             //registering popup with OnMenuItemClickListener
 //            popup.setOnMenuItemClickListener { item ->
 //                Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT)
 //                    .show()
-            true
+
 //            }
 
             popup.show()//showing popup menu
 //            We end code here for menu
+
+
         }
 
 
@@ -143,3 +165,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
