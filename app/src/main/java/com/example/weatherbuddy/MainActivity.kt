@@ -21,8 +21,8 @@ import com.example.weatherbuddy.Main2Activity
 
 class MainActivity : AppCompatActivity() {
 //check if commits working
-//    var CITY: String = "Los Angeles,US"
-    var CITY: String = "London,GB"
+    var CITY: String = "Los Angeles,US"
+//    var CITY: String = "London,GB"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
     var id = 0
 
@@ -36,6 +36,24 @@ class MainActivity : AppCompatActivity() {
 
         //bind activity_main.xml
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        val extras = intent.extras
+
+        if (extras != null) {
+            val value = extras.getString("my_variable")
+            System.out.println(value)
+
+            if(value != CITY){
+                System.out.println("VALUE DOES NOT EQUAL CITY"+value+"not"+CITY)
+
+//                findViewById<TextView>(R.id.current_location).text = value
+                CITY = value
+                System.out.println("NEW CITY ADDED!City is now" + CITY)
+
+            }
+
+
+        }
 
         weatherTask().execute()
 
@@ -127,23 +145,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        val extras = intent.extras
 
-        if (extras != null) {
-            val value = extras.getString("my_variable")
-            System.out.println(value)
-
-            if(value != CITY){
-                System.out.println("VALUE DOES NOT EQUAL CITY"+value+"not"+CITY)
-
-//                findViewById<TextView>(R.id.current_location).text = value
-                CITY = value
-                System.out.println("NEW CITY ADDED!City is now" + CITY)
-
-            }
-
-
-        }
 
 
     }

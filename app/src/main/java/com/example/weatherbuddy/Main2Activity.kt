@@ -3,6 +3,7 @@ package com.example.weatherbuddy
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -10,7 +11,7 @@ import android.widget.Toast
 import com.androdocs.weatherbuddy.MainActivity
 import com.androdocs.weatherbuddy.R
 import kotlinx.android.synthetic.main.activity_main2.*
-
+import java.net.URL
 
 
 class Main2Activity : AppCompatActivity() {
@@ -49,7 +50,7 @@ class Main2Activity : AppCompatActivity() {
 //            var et = findViewById<TextView>(R.id.inputEditText).text as TextView
             var et= inputEditText.text.toString()
             Toast.makeText(this, et, Toast.LENGTH_SHORT).show()
-            current_location.setText(et)
+//            current_location.setText(et)
             newLocation = et
 
             if(hello != ""){
@@ -57,6 +58,38 @@ class Main2Activity : AppCompatActivity() {
 
 
             }
+
+            val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
+
+            var response:String?
+
+
+
+
+            val thread = Thread(Runnable {
+                try{
+
+                    response = URL("https://api.openweathermap.org/data/2.5/weather?q=$newLocation&units=imperial&appid=$API").readText(
+                        Charsets.UTF_8)
+                    current_location.setText(newLocation)
+
+                }catch (e: Exception){
+                    response = null
+                    var city_file = URL("http://bulk.openweathermap.org/sample/ for valid downloads")
+//                    var city_file = "<a href=http://bulk.openweathermap.org/sample/ >Google</a>"
+//                    current_location.setText("Not a valid country: refer to city.list.json file located at" + city_file)
+                    current_location.setText("Not valid city, valid cities located on openweathermap.org")
+                    System.out.println("Error"+ e)
+                    System.out.println("Not working link: "+"https://api.openweathermap.org/data/2.5/weather?q=$newLocation&units=imperial&appid=$API")
+
+                }
+                System.out.println("This is the response in the loop"+response)
+                System.out.println("This is the new city"+newLocation)
+            })
+
+            thread.start();
+
+
 
 
         }
@@ -78,7 +111,14 @@ class Main2Activity : AppCompatActivity() {
                 startActivity(intent1)
 
 
+
+
+
             }
+
+//            var CITY: String = "London,GB"
+
+
 
 
 
