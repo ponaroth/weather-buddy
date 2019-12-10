@@ -25,7 +25,7 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView address;
 
   @NonNull
-  public final MyImageView androidAvatar;
+  public final MyImageView bearAvatar;
 
   @NonNull
   public final TextView dateTextView;
@@ -73,13 +73,13 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected AvatarViewModel mAvatarViewModel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView errorText,
+      TextView address, MyImageView bearAvatar, TextView dateTextView, TextView errorText,
       ImageView hamburgermenu, TextView humidity, ProgressBar loader,
       LinearLayout overviewContainer, ConstraintLayout relativeLayout, TextView status,
       TextView temp, TextView tempMax, TextView tempMin, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
-    this.androidAvatar = androidAvatar;
+    this.bearAvatar = bearAvatar;
     this.dateTextView = dateTextView;
     this.errorText = errorText;
     this.hamburgermenu = hamburgermenu;

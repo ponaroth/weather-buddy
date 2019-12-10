@@ -1,77 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--https://openweathermap.org/weather-conditions What each weather_condition variable is based off of.-->
+
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
     <!--Thunderstorm -->
-    <color name="t1">#000000</color>
-    <color name="t2">#191919</color>
-    <color name="t3">#323232</color>
-    <color name="t4">#4c4c4c</color>
-    <color name="t5">#666666</color>
-    <color name="t6">#7f7f7f</color>
-    <color name="t7">#999999</color>
-    <color name="t8">#b2b2b2</color>
-    <color name="t9">#cccccc</color>
-    <color name="t10">#e5e5e5</color>
+    <color name="id200">#000000</color>
+    <color name="id201">#191919</color>
+    <color name="id202">#323232</color>
+    <color name="id210">#4c4c4c</color>
+    <color name="id211">#666666</color>
+    <color name="id212">#7f7f7f</color>
+    <color name="id221">#999999</color>
+    <color name="id230">#b2b2b2</color>
+    <color name="id231">#cccccc</color>
+    <color name="id232">#e5e5e5</color>
 
     <!--Drizzle -->
-    <color name="d1">#008000</color>
-    <color name="d2">#198c19</color>
-    <color name="d3">#329932</color>
-    <color name="d4">#4ca64c</color>
-    <color name="d5">#66b266</color>
-    <color name="d6">#7fbf7f</color>
-    <color name="d7">#99cc99</color>
-    <color name="d8">#b2d8b2</color>
-    <color name="d9">#cce5cc</color>
+    <color name="id300">#008000</color>
+    <color name="id301">#198c19</color>
+    <color name="id302">#329932</color>
+    <color name="id310">#4ca64c</color>
+    <color name="id311">#66b266</color>
+    <color name="id312">#7fbf7f</color>
+    <color name="id313">#99cc99</color>
+    <color name="id314">#b2d8b2</color>
+    <color name="id321">#cce5cc</color>
 
     <!--Rain -->
-    <color name="r1">#0080ff</color>
-    <color name="r2">#198cff</color>
-    <color name="r3">#3299ff</color>
-    <color name="r4">#4ca6ff</color>
-    <color name="r5">#66b2ff</color>
-    <color name="r6">#7fbfff</color>
-    <color name="r7">#99ccff</color>
-    <color name="r8">#b2d8ff</color>
-    <color name="r9">#cce5ff</color>
-    <color name="r10">#e5f2ff</color>
+    <color name="id500">#0080ff</color>
+    <color name="id501">#198cff</color>
+    <color name="id502">#3299ff</color>
+    <color name="id503">#4ca6ff</color>
+    <color name="id504">#66b2ff</color>
+    <color name="id511">#7fbfff</color>
+    <color name="id520">#99ccff</color>
+    <color name="id521">#b2d8ff</color>
+    <color name="id522">#cce5ff</color>
+    <color name="id531">#e5f2ff</color>
 
     <!--Snow -->
-    <color name="s1">#1e9f9f</color>
-    <color name="s2">#34a8a8</color>
-    <color name="s3">#4ab2b2</color>
-    <color name="s4">#61bbbb</color>
-    <color name="s5">#78c5c5</color>
-    <color name="s6">#8ecfcf</color>
-    <color name="s7">#a5d8d8</color>
-    <color name="s8">#bbe2e2</color>
-    <color name="s9">#d2ebeb</color>
-    <color name="s10">#e8f5f5</color>
-    <color name="s11">#ffffff</color>
+    <color name="id600">#1e9f9f</color>
+    <color name="id601">#34a8a8</color>
+    <color name="id602">#4ab2b2</color>
+    <color name="id611">#61bbbb</color>
+    <color name="id612">#78c5c5</color>
+    <color name="id613">#8ecfcf</color>
+    <color name="id615">#a5d8d8</color>
+    <color name="id616">#bbe2e2</color>
+    <color name="id620">#d2ebeb</color>
+    <color name="id621">#e8f5f5</color>
+    <color name="id622">#ffffff</color>
 
     <!--Atmosphere -->
-    <color name="a1">#9f1e5f</color>
-    <color name="a2">#a8346f</color>
-    <color name="a3">#b24a7e</color>
-    <color name="a4">#bb618f</color>
-    <color name="a5">#c5789f</color>
-    <color name="a6">#cf8eaf</color>
-    <color name="a7">#d8a5bf</color>
-    <color name="a8">#e2bbcf</color>
-    <color name="a9">#ebd2df</color>
-    <color name="a10">#f5e8ef</color>
+    <color name="id701">#9f1e5f</color>
+    <color name="id711">#a8346f</color>
+    <color name="id721">#b24a7e</color>
+    <color name="id731">#bb618f</color>
+    <color name="id741">#c5789f</color>
+    <color name="id751">#cf8eaf</color>
+    <color name="id761">#d8a5bf</color>
+    <color name="id762">#e2bbcf</color>
+    <color name="id771">#ebd2df</color>
+    <color name="id781">#f5e8ef</color>
 
     <!--Clear -->
-    <color name="n1">#6666ff</color>
+    <color name="id800">#6666ff</color>
 
     <!--Clouds -->
-    <color name="c1">#323284</color>
-    <color name="c2">#6666a3</color>
-    <color name="c3">#9999c1</color>
-    <color name="c4">#cccce0</color>
+    <color name="id801">#323284</color>
+    <color name="id802">#6666a3</color>
+    <color name="id803">#9999c1</color>
+    <color name="id804">#cccce0</color>
 
 </resources>
 

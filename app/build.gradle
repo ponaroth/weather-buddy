@@ -36,6 +36,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
+    //VectorMaster
+    implementation 'com.sdsmdg.harjot:vectormaster:1.1.3'
+
     //ViewModel
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
 }

@@ -6,63 +6,63 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
+8-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
+9-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-24:19
+13-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:7:5-24:19
 14        android:allowBackup="true"
-14-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:8:9-35
+14-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.2] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/68399ff6f7cdf924235d3ad145929c6a/core-1.0.2/AndroidManifest.xml:22:18-86
+15-->[androidx.core:core:1.0.2] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\68399ff6f7cdf924235d3ad145929c6a\core-1.0.2\AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:9:9-43
+17-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:10:9-41
+18-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:11:9-54
+19-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:12:9-35
+20-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
-22-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:13:9-40
+22-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:13:9-40
 23        <activity android:name="com.example.weatherbuddy.Main2Activity" />
-23-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:9-84
-23-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:19-72
+23-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:14:9-84
+23-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:14:19-72
 24        <activity
-24-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:15:9-23:20
+24-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:15:9-23:20
 25            android:name="com.androdocs.weatherbuddy.MainActivity"
-25-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:16:13-41
+25-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:16:13-41
 26            android:screenOrientation="portrait" >
-26-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:17:13-49
+26-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:17:13-49
 27            <intent-filter>
-27-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:18:13-22:29
+27-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:18:13-22:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:19:17-69
-28-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:19:25-66
+28-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:19:17-69
+28-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:19:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:21:17-77
-30-->/Users/margaritanuridjanian/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:21:27-74
+30-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:21:17-77
+30-->C:\Users\Ashley\Desktop\CS 4540\weather-buddy\app\src\main\AndroidManifest.xml:21:27-74
 31            </intent-filter>
 32        </activity>
 33
 34        <provider
-34-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+34-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\3ef3525d7b47ab95914a693a7c1e023c\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-35-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+35-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\3ef3525d7b47ab95914a693a7c1e023c\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
 36            android:authorities="com.example.weatherbuddy.lifecycle-process"
-36-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\3ef3525d7b47ab95914a693a7c1e023c\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 37            android:exported="false"
-37-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+37-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\3ef3525d7b47ab95914a693a7c1e023c\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 38            android:multiprocess="true" />
-38-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/margaritanuridjanian/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Ashley\.gradle\caches\transforms-2\files-2.1\3ef3525d7b47ab95914a693a7c1e023c\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 39    </application>
 40
 41</manifest>

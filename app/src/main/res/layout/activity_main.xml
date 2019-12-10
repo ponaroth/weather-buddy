@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--https://android.jlelse.eu/binding-adapters-with-kotlin-part-1-78b957ad6b8b Advance binding techniques for Kotlin-->
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -33,7 +35,7 @@
             android:text="Today | Los Angeles"
             android:textAllCaps="true"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/androidAvatar"
+            app:layout_constraintBottom_toTopOf="@+id/bearAvatar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -49,7 +51,7 @@
             android:text="Sunday 12 December 2016"
             android:textAllCaps="true"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/androidAvatar"
+            app:layout_constraintBottom_toTopOf="@+id/bearAvatar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,20 +59,17 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <com.example.weatherbuddy.MyImageView
-            android:id="@+id/androidAvatar"
+            android:id="@+id/bearAvatar"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="124dp"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/ic_android_logo"
-            android:backgroundTint="@drawable/image_weather_selector"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:weather_condition="500"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            app:condition="800" />
 
         <LinearLayout
             android:id="@+id/overviewContainer"
@@ -85,7 +84,7 @@
             app:layout_constraintBottom_toTopOf="@+id/errorText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/androidAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/bearAvatar"
             app:layout_constraintVertical_bias="0.528">
 
             <TextView
