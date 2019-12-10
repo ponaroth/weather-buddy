@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weatherCondition">
+        <!--Thunderstorm -->
+        <item>#000000</item>
+        <item>#191919</item>
+        <item>#323232</item>
+        <item>#4c4c4c</item>
+        <item>#666666</item>
+        <item>#7f7f7f</item>
+        <item>#999999</item>
+        <item>#b2b2b2</item>
+        <item>#cccccc</item>
+        <item>#e5e5e5</item>
+
+        <!--Drizzle -->
+        <item>#008000</item>
+        <item>#198c19</item>
+        <item>#329932</item>
+        <item>#4ca64c</item>
+        <item>#66b266</item>
+        <item>#7fbf7f</item>
+        <item>#99cc99</item>
+        <item>#b2d8b2</item>
+        <item>#cce5cc</item>
+
+        <!--Rain -->
+        <item>#0080ff</item>
+        <item>#198cff</item>
+        <item>#3299ff</item>
+        <item>#4ca6ff</item>
+        <item>#66b2ff</item>
+        <item>#7fbfff</item>
+        <item>#99ccff</item>
+        <item>#b2d8ff</item>
+        <item>#cce5ff</item>
+        <item>#e5f2ff</item>
+
+        <!--Snow -->
+        <item>#1e9f9f</item>
+        <item>#34a8a8</item>
+        <item>#4ab2b2</item>
+        <item>#61bbbb</item>
+        <item>#78c5c5</item>
+        <item>#8ecfcf</item>
+        <item>#a5d8d8</item>
+        <item>#bbe2e2</item>
+        <item>#d2ebeb</item>
+        <item>#e8f5f5</item>
+        <item>#ffffff</item>
+
+        <!--Atmosphere -->
+        <item>#9f1e5f</item>
+        <item>#a8346f</item>
+        <item>#b24a7e</item>
+        <item>#bb618f</item>
+        <item>#c5789f</item>
+        <item>#cf8eaf</item>
+        <item>#d8a5bf</item>
+        <item>#e2bbcf</item>
+        <item>#ebd2df</item>
+        <item>#f5e8ef</item>
+
+        <!--Clear -->
+        <item>#6666ff</item>
+
+        <!--Clouds -->
+        <item>#323284</item>
+        <item>#6666a3</item>
+        <item>#9999c1</item>
+        <item>#cccce0</item>
+    </string-array>
+
+    <string-array name="humidity">
+        <item>#493167</item> <!--100%-->
+        <item>#523874</item> <!--97%-->
+        <item>#5c3e81</item> <!--94%-->
+        <item>#65448e</item> <!--85%-->
+        <item>#6f4b9c</item> <!--75%-->
+        <item>#7851a9</item> <!--69%-->
+        <item>#825db1</item> <!--58%-->
+        <item>#8c6ab7</item> <!--53%-->
+        <item>#9677be</item> <!--33%-->
+        <item>#a184c4</item> <!--11%-->
+        <item>#ab92cb</item> <!--0%-->
+    </string-array>
+
+    <string-array name="temperature">
+        <item>#000000</item> <!--(-114)F-->
+        <item>#011910</item> <!--(-100)F-->
+        <item>#013220</item> <!--(-50)F-->
+        <item>#023220</item> <!--(-32)F-->
+        <item>#034b30</item> <!--(-25)F-->
+        <item>#004768</item> <!--0F-->
+        <item>#005981</item> <!--20F-->
+        <item>#006b9a</item> <!--30F-->
+        <item>#008fcd</item> <!--40F-->
+        <item>#00a1e6</item> <!--50F-->
+        <item>#00b3ff</item> <!--60F-->
+        <item>#ffcc00</item> <!--70F-->
+        <item>#ff4c00</item> <!--80F-->
+        <item>#ff2121</item> <!--90F-->
+        <item>#d20000</item> <!--100F-->
+        <item>#9f0000</item> <!--110F-->
+        <item>#290000</item> <!--120F-->
+    </string-array>
+
+</resources>

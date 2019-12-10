@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="humidity">
+        <item>#493167</item> <!--100%-->
+        <item>#523874</item> <!--97%-->
+        <item>#5c3e81</item> <!--94%-->
+        <item>#65448e</item> <!--85%-->
+        <item>#6f4b9c</item> <!--75%-->
+        <item>#7851a9</item> <!--69%-->
+        <item>#825db1</item> <!--58%-->
+        <item>#8c6ab7</item> <!--53%-->
+        <item>#9677be</item> <!--33%-->
+        <item>#a184c4</item> <!--11%-->
+        <item>#ab92cb</item> <!--0%-->
+    </string-array>
+    <string-array name="temperature">
+        <item>#000000</item> <!--(-114)F-->
+        <item>#011910</item> <!--(-100)F-->
+        <item>#013220</item> <!--(-50)F-->
+        <item>#023220</item> <!--(-32)F-->
+        <item>#034b30</item> <!--(-25)F-->
+        <item>#004768</item> <!--0F-->
+        <item>#005981</item> <!--20F-->
+        <item>#006b9a</item> <!--30F-->
+        <item>#008fcd</item> <!--40F-->
+        <item>#00a1e6</item> <!--50F-->
+        <item>#00b3ff</item> <!--60F-->
+        <item>#ffcc00</item> <!--70F-->
+        <item>#ff4c00</item> <!--80F-->
+        <item>#ff2121</item> <!--90F-->
+        <item>#d20000</item> <!--100F-->
+        <item>#9f0000</item> <!--110F-->
+        <item>#290000</item> <!--120F-->
+    </string-array>
+    <string-array name="weatherCondition">
+        <!--Thunderstorm -->
+        <item>#000000</item>
+        <item>#191919</item>
+        <item>#323232</item>
+        <item>#4c4c4c</item>
+        <item>#666666</item>
+        <item>#7f7f7f</item>
+        <item>#999999</item>
+        <item>#b2b2b2</item>
+        <item>#cccccc</item>
+        <item>#e5e5e5</item>
+
+        <!--Drizzle -->
+        <item>#008000</item>
+        <item>#198c19</item>
+        <item>#329932</item>
+        <item>#4ca64c</item>
+        <item>#66b266</item>
+        <item>#7fbf7f</item>
+        <item>#99cc99</item>
+        <item>#b2d8b2</item>
+        <item>#cce5cc</item>
+
+        <!--Rain -->
+        <item>#0080ff</item>
+        <item>#198cff</item>
+        <item>#3299ff</item>
+        <item>#4ca6ff</item>
+        <item>#66b2ff</item>
+        <item>#7fbfff</item>
+        <item>#99ccff</item>
+        <item>#b2d8ff</item>
+        <item>#cce5ff</item>
+        <item>#e5f2ff</item>
+
+        <!--Snow -->
+        <item>#1e9f9f</item>
+        <item>#34a8a8</item>
+        <item>#4ab2b2</item>
+        <item>#61bbbb</item>
+        <item>#78c5c5</item>
+        <item>#8ecfcf</item>
+        <item>#a5d8d8</item>
+        <item>#bbe2e2</item>
+        <item>#d2ebeb</item>
+        <item>#e8f5f5</item>
+        <item>#ffffff</item>
+
+        <!--Atmosphere -->
+        <item>#9f1e5f</item>
+        <item>#a8346f</item>
+        <item>#b24a7e</item>
+        <item>#bb618f</item>
+        <item>#c5789f</item>
+        <item>#cf8eaf</item>
+        <item>#d8a5bf</item>
+        <item>#e2bbcf</item>
+        <item>#ebd2df</item>
+        <item>#f5e8ef</item>
+
+        <!--Clear -->
+        <item>#6666ff</item>
+
+        <!--Clouds -->
+        <item>#323284</item>
+        <item>#6666a3</item>
+        <item>#9999c1</item>
+        <item>#cccce0</item>
+    </string-array>
     <attr format="boolean" name="barrierAllowsGoneWidgets"/>
     <attr format="enum" name="barrierDirection">
         <enum name="left" value="0"/>
@@ -133,16 +235,6 @@
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_allow_stacked_button_bar">false</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
-    <color name="a1">#9f1e5f</color>
-    <color name="a10">#f5e8ef</color>
-    <color name="a2">#a8346f</color>
-    <color name="a3">#b24a7e</color>
-    <color name="a4">#bb618f</color>
-    <color name="a5">#c5789f</color>
-    <color name="a6">#cf8eaf</color>
-    <color name="a7">#d8a5bf</color>
-    <color name="a8">#e2bbcf</color>
-    <color name="a9">#ebd2df</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -161,22 +253,9 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <color name="c1">#323284</color>
-    <color name="c2">#6666a3</color>
-    <color name="c3">#9999c1</color>
-    <color name="c4">#cccce0</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="d1">#008000</color>
-    <color name="d2">#198c19</color>
-    <color name="d3">#329932</color>
-    <color name="d4">#4ca64c</color>
-    <color name="d5">#66b266</color>
-    <color name="d6">#7fbf7f</color>
-    <color name="d7">#99cc99</color>
-    <color name="d8">#b2d8b2</color>
-    <color name="d9">#cce5cc</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -187,6 +266,61 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="id200">#000000</color>
+    <color name="id201">#191919</color>
+    <color name="id202">#323232</color>
+    <color name="id210">#4c4c4c</color>
+    <color name="id211">#666666</color>
+    <color name="id212">#7f7f7f</color>
+    <color name="id221">#999999</color>
+    <color name="id230">#b2b2b2</color>
+    <color name="id231">#cccccc</color>
+    <color name="id232">#e5e5e5</color>
+    <color name="id300">#008000</color>
+    <color name="id301">#198c19</color>
+    <color name="id302">#329932</color>
+    <color name="id310">#4ca64c</color>
+    <color name="id311">#66b266</color>
+    <color name="id312">#7fbf7f</color>
+    <color name="id313">#99cc99</color>
+    <color name="id314">#b2d8b2</color>
+    <color name="id321">#cce5cc</color>
+    <color name="id500">#0080ff</color>
+    <color name="id501">#198cff</color>
+    <color name="id502">#3299ff</color>
+    <color name="id503">#4ca6ff</color>
+    <color name="id504">#66b2ff</color>
+    <color name="id511">#7fbfff</color>
+    <color name="id520">#99ccff</color>
+    <color name="id521">#b2d8ff</color>
+    <color name="id522">#cce5ff</color>
+    <color name="id531">#e5f2ff</color>
+    <color name="id600">#1e9f9f</color>
+    <color name="id601">#34a8a8</color>
+    <color name="id602">#4ab2b2</color>
+    <color name="id611">#61bbbb</color>
+    <color name="id612">#78c5c5</color>
+    <color name="id613">#8ecfcf</color>
+    <color name="id615">#a5d8d8</color>
+    <color name="id616">#bbe2e2</color>
+    <color name="id620">#d2ebeb</color>
+    <color name="id621">#e8f5f5</color>
+    <color name="id622">#ffffff</color>
+    <color name="id701">#9f1e5f</color>
+    <color name="id711">#a8346f</color>
+    <color name="id721">#b24a7e</color>
+    <color name="id731">#bb618f</color>
+    <color name="id741">#c5789f</color>
+    <color name="id751">#cf8eaf</color>
+    <color name="id761">#d8a5bf</color>
+    <color name="id762">#e2bbcf</color>
+    <color name="id771">#ebd2df</color>
+    <color name="id781">#f5e8ef</color>
+    <color name="id800">#6666ff</color>
+    <color name="id801">#323284</color>
+    <color name="id802">#6666a3</color>
+    <color name="id803">#9999c1</color>
+    <color name="id804">#cccce0</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -199,7 +333,6 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="n1">#6666ff</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -210,29 +343,8 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="r1">#0080ff</color>
-    <color name="r10">#e5f2ff</color>
-    <color name="r2">#198cff</color>
-    <color name="r3">#3299ff</color>
-    <color name="r4">#4ca6ff</color>
-    <color name="r5">#66b2ff</color>
-    <color name="r6">#7fbfff</color>
-    <color name="r7">#99ccff</color>
-    <color name="r8">#b2d8ff</color>
-    <color name="r9">#cce5ff</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
-    <color name="s1">#1e9f9f</color>
-    <color name="s10">#e8f5f5</color>
-    <color name="s11">#ffffff</color>
-    <color name="s2">#34a8a8</color>
-    <color name="s3">#4ab2b2</color>
-    <color name="s4">#61bbbb</color>
-    <color name="s5">#78c5c5</color>
-    <color name="s6">#8ecfcf</color>
-    <color name="s7">#a5d8d8</color>
-    <color name="s8">#bbe2e2</color>
-    <color name="s9">#d2ebeb</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
@@ -241,16 +353,6 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="t1">#000000</color>
-    <color name="t10">#e5e5e5</color>
-    <color name="t2">#191919</color>
-    <color name="t3">#323232</color>
-    <color name="t4">#4c4c4c</color>
-    <color name="t5">#666666</color>
-    <color name="t6">#7f7f7f</color>
-    <color name="t7">#999999</color>
-    <color name="t8">#b2b2b2</color>
-    <color name="t9">#cccccc</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
@@ -3076,7 +3178,9 @@
         <attr format="reference" name="subMenuArrow"/>
     </declare-styleable>
     <declare-styleable name="MyImageView">
-        <attr format="string" name="weather_condition"/>
+        <attr format="string" name="condition"/>
+        <attr format="string" name="humidity"/>
+        <attr format="string" name="temperature"/>
     </declare-styleable>
     <declare-styleable name="PopupWindow">
         <!-- Whether the popup window should overlap its anchor view. -->
@@ -3321,6 +3425,7 @@
         <attr format="color" name="subtitleTextColor"/>
         <attr name="android:minHeight"/>
     </declare-styleable>
+    <declare-styleable name="VectorMasterView"><attr format="reference" name="vector_src"/><attr format="boolean" name="use_legacy_parser"/></declare-styleable>
     <declare-styleable name="View">
         <!-- Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. -->
         <attr format="dimension" name="paddingStart"/>

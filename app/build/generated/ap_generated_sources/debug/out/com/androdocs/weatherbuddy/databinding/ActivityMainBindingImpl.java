@@ -16,7 +16,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.today_textView, 1);
         sViewsWithIds.put(R.id.date_textView, 2);
-        sViewsWithIds.put(R.id.androidAvatar, 3);
+        sViewsWithIds.put(R.id.bearAvatar, 3);
         sViewsWithIds.put(R.id.overviewContainer, 4);
         sViewsWithIds.put(R.id.address, 5);
         sViewsWithIds.put(R.id.temp, 6);
