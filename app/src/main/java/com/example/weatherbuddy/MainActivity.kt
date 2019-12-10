@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 CITY = value
                 System.out.println("NEW CITY ADDED!City is now" + CITY)
 
+
             }
 
 
