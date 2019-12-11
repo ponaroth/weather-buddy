@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WeatherBuddy</string>
+    <string name="tempDisplay">78\u00B0</string>
 </resources>

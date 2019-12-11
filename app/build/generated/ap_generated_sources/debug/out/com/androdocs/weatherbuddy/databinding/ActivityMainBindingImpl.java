@@ -14,49 +14,57 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.today_textView, 1);
-        sViewsWithIds.put(R.id.date_textView, 2);
-        sViewsWithIds.put(R.id.bearAvatar, 3);
-        sViewsWithIds.put(R.id.overviewContainer, 4);
-        sViewsWithIds.put(R.id.address, 5);
-        sViewsWithIds.put(R.id.temp, 6);
-        sViewsWithIds.put(R.id.status, 7);
-        sViewsWithIds.put(R.id.temp_min, 8);
-        sViewsWithIds.put(R.id.temp_max, 9);
-        sViewsWithIds.put(R.id.wind, 10);
-        sViewsWithIds.put(R.id.humidity, 11);
-        sViewsWithIds.put(R.id.loader, 12);
-        sViewsWithIds.put(R.id.errorText, 13);
-        sViewsWithIds.put(R.id.hamburgermenu, 14);
+        sViewsWithIds.put(R.id.temp, 1);
+        sViewsWithIds.put(R.id.androidAvatar, 2);
+        sViewsWithIds.put(R.id.hamburgermenu, 3);
+        sViewsWithIds.put(R.id.dateText, 4);
+        sViewsWithIds.put(R.id.digitalClock, 5);
+        sViewsWithIds.put(R.id.overviewContainer, 6);
+        sViewsWithIds.put(R.id.address, 7);
+        sViewsWithIds.put(R.id.wind, 8);
+        sViewsWithIds.put(R.id.humidity, 9);
+        sViewsWithIds.put(R.id.loader, 10);
+        sViewsWithIds.put(R.id.errorText, 11);
+        sViewsWithIds.put(R.id.arrow_up, 12);
+        sViewsWithIds.put(R.id.maxTemp, 13);
+        sViewsWithIds.put(R.id.arrow_down, 14);
+        sViewsWithIds.put(R.id.minTemp, 15);
+        sViewsWithIds.put(R.id.imageView2, 16);
+        sViewsWithIds.put(R.id.status, 17);
     }
     // views
+    @NonNull
+    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 18, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[5]
-            , (com.example.weatherbuddy.MyImageView) bindings[3]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[13]
-            , (android.widget.ImageView) bindings[14]
-            , (android.widget.TextView) bindings[11]
-            , (android.widget.ProgressBar) bindings[12]
-            , (android.widget.LinearLayout) bindings[4]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.TextView) bindings[7]
-            , (android.widget.TextView) bindings[6]
+            , (com.example.weatherbuddy.MyImageView) bindings[2]
+            , (android.widget.ImageView) bindings[14]
+            , (android.widget.ImageView) bindings[12]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextClock) bindings[5]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.ImageView) bindings[3]
             , (android.widget.TextView) bindings[9]
-            , (android.widget.TextView) bindings[8]
+            , (android.widget.ImageView) bindings[16]
+            , (android.widget.ProgressBar) bindings[10]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.LinearLayout) bindings[6]
+            , (android.widget.TextView) bindings[17]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.TextView) bindings[10]
+            , (android.widget.TextView) bindings[8]
             );
-        this.relativeLayout.setTag(null);
+        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
+        this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
