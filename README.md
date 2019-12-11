@@ -1,4 +1,4 @@
-![Picture](https://github.com/bhern154/bhern154.github.io/blob/master/banner.psd)
+![Picture](https://github.com/bhern154/bhern154.github.io/blob/master/banner.jpg)
 
 # weather-buddy
 
