@@ -1,4 +1,164 @@
-raintLayout_Layout_layout_constraintVertical_weight
+tTheme_actionModeCopyDrawable
+$AppCompatTheme_actionModeCutDrawable
+%AppCompatTheme_actionModeFindDrawable
+&AppCompatTheme_actionModePasteDrawable
+)AppCompatTheme_actionModePopupWindowStyle
+*AppCompatTheme_actionModeSelectAllDrawable
+&AppCompatTheme_actionModeShareDrawable
+(AppCompatTheme_actionModeSplitBackground
+AppCompatTheme_actionModeStyle
+*AppCompatTheme_actionModeWebSearchDrawable
+(AppCompatTheme_actionOverflowButtonStyle
+&AppCompatTheme_actionOverflowMenuStyle
+'AppCompatTheme_activityChooserViewStyle
+*AppCompatTheme_alertDialogButtonGroupStyle
+'AppCompatTheme_alertDialogCenterButtons
+AppCompatTheme_alertDialogStyle
+AppCompatTheme_alertDialogTheme
++AppCompatTheme_android_windowAnimationStyle
+'AppCompatTheme_android_windowIsFloating
+(AppCompatTheme_autoCompleteTextViewStyle
+$AppCompatTheme_borderlessButtonStyle
+#AppCompatTheme_buttonBarButtonStyle
++AppCompatTheme_buttonBarNegativeButtonStyle
+*AppCompatTheme_buttonBarNeutralButtonStyle
++AppCompatTheme_buttonBarPositiveButtonStyle
+AppCompatTheme_buttonBarStyle
+AppCompatTheme_buttonStyle
+AppCompatTheme_buttonStyleSmall
+AppCompatTheme_checkboxStyle
+#AppCompatTheme_checkedTextViewStyle
+AppCompatTheme_colorAccent
+&AppCompatTheme_colorBackgroundFloating
+ AppCompatTheme_colorButtonNormal
+$AppCompatTheme_colorControlActivated
+$AppCompatTheme_colorControlHighlight
+!AppCompatTheme_colorControlNormal
+AppCompatTheme_colorError
+AppCompatTheme_colorPrimary
+AppCompatTheme_colorPrimaryDark
+%AppCompatTheme_colorSwitchThumbNormal
+ AppCompatTheme_controlBackground
+!AppCompatTheme_dialogCornerRadius
+%AppCompatTheme_dialogPreferredPadding
+AppCompatTheme_dialogTheme
+ AppCompatTheme_dividerHorizontal
+AppCompatTheme_dividerVertical
+$AppCompatTheme_dropDownListViewStyle
+.AppCompatTheme_dropdownListPreferredItemHeight
+!AppCompatTheme_editTextBackground
+AppCompatTheme_editTextColor
+AppCompatTheme_editTextStyle
+ AppCompatTheme_homeAsUpIndicator
+AppCompatTheme_imageButtonStyle
+,AppCompatTheme_listChoiceBackgroundIndicator
+%AppCompatTheme_listDividerAlertDialog
+ AppCompatTheme_listMenuViewStyle
+#AppCompatTheme_listPopupWindowStyle
+&AppCompatTheme_listPreferredItemHeight
++AppCompatTheme_listPreferredItemHeightLarge
++AppCompatTheme_listPreferredItemHeightSmall
++AppCompatTheme_listPreferredItemPaddingLeft
+,AppCompatTheme_listPreferredItemPaddingRight
+AppCompatTheme_panelBackground
+!AppCompatTheme_panelMenuListTheme
+!AppCompatTheme_panelMenuListWidth
+AppCompatTheme_popupMenuStyle
+AppCompatTheme_popupWindowStyle
+AppCompatTheme_radioButtonStyle
+AppCompatTheme_ratingBarStyle
+&AppCompatTheme_ratingBarStyleIndicator
+"AppCompatTheme_ratingBarStyleSmall
+AppCompatTheme_searchViewStyle
+AppCompatTheme_seekBarStyle
+'AppCompatTheme_selectableItemBackground
+1AppCompatTheme_selectableItemBackgroundBorderless
+'AppCompatTheme_spinnerDropDownItemStyle
+AppCompatTheme_spinnerStyle
+AppCompatTheme_switchStyle
++AppCompatTheme_textAppearanceLargePopupMenu
+%AppCompatTheme_textAppearanceListItem
+.AppCompatTheme_textAppearanceListItemSecondary
+*AppCompatTheme_textAppearanceListItemSmall
+,AppCompatTheme_textAppearancePopupMenuHeader
+1AppCompatTheme_textAppearanceSearchResultSubtitle
+.AppCompatTheme_textAppearanceSearchResultTitle
++AppCompatTheme_textAppearanceSmallPopupMenu
++AppCompatTheme_textColorAlertDialogListItem
+!AppCompatTheme_textColorSearchUrl
++AppCompatTheme_toolbarNavigationButtonStyle
+AppCompatTheme_toolbarStyle
+%AppCompatTheme_tooltipForegroundColor
+%AppCompatTheme_tooltipFrameBackground
+ AppCompatTheme_viewInflaterClass
+AppCompatTheme_windowActionBar
+%AppCompatTheme_windowActionBarOverlay
+&AppCompatTheme_windowActionModeOverlay
+%AppCompatTheme_windowFixedHeightMajor
+%AppCompatTheme_windowFixedHeightMinor
+$AppCompatTheme_windowFixedWidthMajor
+$AppCompatTheme_windowFixedWidthMinor
+"AppCompatTheme_windowMinWidthMajor
+"AppCompatTheme_windowMinWidthMinor
+AppCompatTheme_windowNoTitle
+ButtonBarLayout
+ButtonBarLayout_allowStacking
+ColorStateListItem
+ColorStateListItem_alpha
+ ColorStateListItem_android_alpha
+ ColorStateListItem_android_color
+CompoundButton
+CompoundButton_android_button
+CompoundButton_buttonTint
+CompoundButton_buttonTintMode
+ConstraintLayout_Layout
+)ConstraintLayout_Layout_android_maxHeight
+(ConstraintLayout_Layout_android_maxWidth
+)ConstraintLayout_Layout_android_minHeight
+(ConstraintLayout_Layout_android_minWidth
++ConstraintLayout_Layout_android_orientation
+0ConstraintLayout_Layout_barrierAllowsGoneWidgets
+(ConstraintLayout_Layout_barrierDirection
+#ConstraintLayout_Layout_chainUseRtl
+%ConstraintLayout_Layout_constraintSet
+1ConstraintLayout_Layout_constraint_referenced_ids
+0ConstraintLayout_Layout_layout_constrainedHeight
+/ConstraintLayout_Layout_layout_constrainedWidth
+9ConstraintLayout_Layout_layout_constraintBaseline_creator
+>ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf
+7ConstraintLayout_Layout_layout_constraintBottom_creator
+:ConstraintLayout_Layout_layout_constraintBottom_toBottomOf
+7ConstraintLayout_Layout_layout_constraintBottom_toTopOf
+/ConstraintLayout_Layout_layout_constraintCircle
+4ConstraintLayout_Layout_layout_constraintCircleAngle
+5ConstraintLayout_Layout_layout_constraintCircleRadius
+7ConstraintLayout_Layout_layout_constraintDimensionRatio
+4ConstraintLayout_Layout_layout_constraintEnd_toEndOf
+6ConstraintLayout_Layout_layout_constraintEnd_toStartOf
+4ConstraintLayout_Layout_layout_constraintGuide_begin
+2ConstraintLayout_Layout_layout_constraintGuide_end
+6ConstraintLayout_Layout_layout_constraintGuide_percent
+7ConstraintLayout_Layout_layout_constraintHeight_default
+3ConstraintLayout_Layout_layout_constraintHeight_max
+3ConstraintLayout_Layout_layout_constraintHeight_min
+7ConstraintLayout_Layout_layout_constraintHeight_percent
+8ConstraintLayout_Layout_layout_constraintHorizontal_bias
+>ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle
+:ConstraintLayout_Layout_layout_constraintHorizontal_weight
+5ConstraintLayout_Layout_layout_constraintLeft_creator
+6ConstraintLayout_Layout_layout_constraintLeft_toLeftOf
+7ConstraintLayout_Layout_layout_constraintLeft_toRightOf
+6ConstraintLayout_Layout_layout_constraintRight_creator
+7ConstraintLayout_Layout_layout_constraintRight_toLeftOf
+8ConstraintLayout_Layout_layout_constraintRight_toRightOf
+6ConstraintLayout_Layout_layout_constraintStart_toEndOf
+8ConstraintLayout_Layout_layout_constraintStart_toStartOf
+4ConstraintLayout_Layout_layout_constraintTop_creator
+7ConstraintLayout_Layout_layout_constraintTop_toBottomOf
+4ConstraintLayout_Layout_layout_constraintTop_toTopOf
+6ConstraintLayout_Layout_layout_constraintVertical_bias
+<ConstraintLayout_Layout_layout_constraintVertical_chainStyle
+8ConstraintLayout_Layout_layout_constraintVertical_weight
 6ConstraintLayout_Layout_layout_constraintWidth_default
 2ConstraintLayout_Layout_layout_constraintWidth_max
 2ConstraintLayout_Layout_layout_constraintWidth_min
@@ -213,7 +373,9 @@ $LinearLayoutCompat_android_weightSum
 MenuView_preserveIconSpacing
 MenuView_subMenuArrow
 MyImageView
-MyImageView_weather_condition
+MyImageView_condition
+MyImageView_humidity
+MyImageView_temperature
 PopupWindow
 PopupWindowBackgroundState
 -PopupWindowBackgroundState_state_above_anchor
@@ -320,6 +482,9 @@ $Toolbar_navigationContentDescription
 Toolbar_titleMargins
 Toolbar_titleTextAppearance
 Toolbar_titleTextColor
+VectorMasterView
+"VectorMasterView_use_legacy_parser
+VectorMasterView_vector_src
 View
 ViewBackgroundHelper
 'ViewBackgroundHelper_android_background
@@ -344,8 +509,8 @@ View_theme   E
  
  
  
-¾ é#   ð20B R0X†Pº	€€ÈðÀ>R	0X†Pº	‚€ÈðÀ>R
-0X†Pº	„€ÈðÀ>R0X†Pº	†€ÈðÀ>R0X†Pº	ˆ€ÈðÀ>R0X†Pº	Š€ÈðÀ>R0X†Pº	Œ€ÈðÀ>R0X†Pº	Ž€ÈðÀ>R0X†Pº	€ÈðÀ>R0X†Pº	’€ÈðÀ>R0X†Pº	”€ÈðÀ>R0X†Pº	–€ÈðÀ>R0X†Pº	˜€ÈðÀ>R0X†Pº	š€ÈðÀ>R0X†Pº	œ€ÈðÀ>R0X†Pº	ž€ÈðÀ>R0X†Pº	 €ÈðÀ>R0X†Pº	¢€ÈðÀ>R0X†Pº	¤€ÈðÀ>R0X†Pº	¦€ÈðÀ>R0X†Pº	¨€ÈðÀ>R0X†Pº	ª€ÈðÀ>R0X†Pº	¬€ÈðÀ>R0X†Pº	®€ÈðÀ>R 0X†Pº	°€ÈðÀ>R!0X†Pº	²€ÈðÀ>R"0X†Pº	´€ÈðÀ>R#0X†Pº	¶€ÈðÀ>R$0X†Pº	¸€ÈðÀ>R%0X†Pº	º€ÈðÀ>R&0X†Pº	¼€ÈðÀ>R'0X†Pº	¾€ÈðÀ>R(0X†Pº	À€ÈðÀ>R)0X†Pº	Â€ÈðÀ>R*0X†Pº	Ä€ÈðÀ>R+0X†Pº	Æ€ÈðÀ>R,0X†Pº	È€ÈðÀ>R-0X†Pº	Ê€ÈðÀ>R.0X†Pº	Ì€ÈðÀ>R/0X†Pº	Î€ÈðÀ>  ¹
+À é#   ð20B R0X†Pº	€€ÐðÀ>R	0X†Pº	‚€ÐðÀ>R
+0X†Pº	„€ÐðÀ>R0X†Pº	†€ÐðÀ>R0X†Pº	ˆ€ÐðÀ>R0X†Pº	Š€ÐðÀ>R0X†Pº	Œ€ÐðÀ>R0X†Pº	Ž€ÐðÀ>R0X†Pº	€ÐðÀ>R0X†Pº	’€ÐðÀ>R0X†Pº	”€ÐðÀ>R0X†Pº	–€ÐðÀ>R0X†Pº	˜€ÐðÀ>R0X†Pº	š€ÐðÀ>R0X†Pº	œ€ÐðÀ>R0X†Pº	ž€ÐðÀ>R0X†Pº	 €ÐðÀ>R0X†Pº	¢€ÐðÀ>R0X†Pº	¤€ÐðÀ>R0X†Pº	¦€ÐðÀ>R0X†Pº	¨€ÐðÀ>R0X†Pº	ª€ÐðÀ>R0X†Pº	¬€ÐðÀ>R0X†Pº	®€ÐðÀ>R 0X†Pº	°€ÐðÀ>R!0X†Pº	²€ÐðÀ>R"0X†Pº	´€ÐðÀ>R#0X†Pº	¶€ÐðÀ>R$0X†Pº	¸€ÐðÀ>R%0X†Pº	º€ÐðÀ>R&0X†Pº	¼€ÐðÀ>R'0X†Pº	¾€ÐðÀ>R(0X†Pº	À€ÐðÀ>R)0X†Pº	Â€ÐðÀ>R*0X†Pº	Ä€ÐðÀ>R+0X†Pº	Æ€ÐðÀ>R,0X†Pº	È€ÐðÀ>R-0X†Pº	Ê€ÐðÀ>R.0X†Pº	Ì€ÐðÀ>R/0X†Pº	Î€ÐðÀ>  ¹
 com
 	androdocs
 weatherbuddy
@@ -401,7 +566,7 @@ $support_simple_spinner_dropdown_item   4
  
 
  
- ¦    !20B R0X†Pº	€€ÐðÀ>   E
+ ¦    !20B R0X†Pº	€€ØðÀ>   E
 com
 	androdocs
 weatherbuddy
