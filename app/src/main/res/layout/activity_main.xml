@@ -179,12 +179,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -192,6 +194,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -206,12 +209,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -219,6 +224,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -233,12 +239,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -246,6 +254,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -259,12 +268,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -272,6 +283,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -285,12 +297,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -298,6 +312,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -311,12 +326,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -324,6 +341,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -337,12 +355,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -350,6 +370,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -363,12 +384,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -376,6 +399,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -389,12 +413,14 @@
                         android:gravity="center"
                         android:layout_marginStart="20dp">
                         <TextView
+                            android:id="@+id/hour9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
                             android:text="Now"
                             android:textSize="20sp" />
                         <ImageView
+                            android:id="@+id/img_hour9"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             app:srcCompat="@android:drawable/btn_star"
@@ -402,6 +428,7 @@
                             android:layout_marginBottom="5dp"
                             android:textSize="20sp"/>
                         <TextView
+                            android:id="@+id/temp_hour9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"

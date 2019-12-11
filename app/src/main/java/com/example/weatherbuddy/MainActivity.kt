@@ -11,6 +11,7 @@ import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import org.json.JSONObject
 import java.net.URL
+import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         weatherTask().execute()
+        weatherTask2().execute()
+
 
         //Initialize AvatarViewModel
         viewModel = ViewModelProviders.of(this).get(AvatarViewModel::class.java)
@@ -61,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 //            popup.setOnMenuItemClickListener { item ->
 //                Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT)
 //                    .show()
-            true
+//            true
 //            }
 
             popup.show()//showing popup menu
@@ -82,10 +85,11 @@ class MainActivity : AppCompatActivity() {
 
         override fun doInBackground(vararg params: String?): String? {
             var response:String?
+
             try{
                 response = URL("https://api.openweathermap.org/data/2.5/weather?q=$CITY&units=imperial&appid=$API").readText(
-                    Charsets.UTF_8
-                )
+                    Charsets.UTF_8)
+
             }catch (e: Exception){
                 response = null
             }
@@ -102,9 +106,9 @@ class MainActivity : AppCompatActivity() {
                 val wind = jsonObj.getJSONObject("wind")
                 val weather = jsonObj.getJSONArray("weather").getJSONObject(0)
 
-                val temp = main.getString("temp")+"°C"
-                val tempMin = "Min Temp: " + main.getString("temp_min")+"°C"
-                val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
+                val temp = main.getString("temp")+"°F"
+                val tempMin = "Min Temp: " + main.getString("temp_min")+"°F"
+                val tempMax = "Max Temp: " + main.getString("temp_max")+"°F"
                 val humidity = "Humidity: " + main.getString("humidity")
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
@@ -119,6 +123,8 @@ class MainActivity : AppCompatActivity() {
                 binding.maxTemp.text = tempMax
                 binding.wind.text = windSpeed
                 binding.humidity.text = humidity
+                binding.hour2.text = "3 pm"
+
 
 
                 // Views populated, Hiding the loader, Showing the main design
@@ -130,6 +136,48 @@ class MainActivity : AppCompatActivity() {
                 //findViewById<TextView>(R.id.errorText).visibility = View.VISIBLE
                 binding.loader.visibility = View.GONE
                 binding.errorText.visibility = View.GONE
+            }
+
+        }
+    }
+
+
+    inner class weatherTask2() : AsyncTask<String, Void, String>() {
+        override fun onPreExecute() {
+            super.onPreExecute()
+
+        }
+
+        override fun doInBackground(vararg params: String?): String? {
+            var response:String?
+
+            try{
+                response = URL("https://api.openweathermap.org/data/2.5/forecast?q=$CITY&units=Imperial&appid=$API").readText(
+                    Charsets.UTF_8)
+
+            }catch (e: Exception){
+                response = null
+            }
+            return response
+        }
+
+        override fun onPostExecute(result: String?) {
+            super.onPostExecute(result)
+            try {
+                // Extracting JSON returns from the API
+                val jsonObj = JSONObject(result)
+                val list = jsonObj.getJSONArray("list")
+                val main = list.getJSONObject(0).getJSONObject("main")
+                val temp = main.getString("temp").toDouble().roundToInt()
+
+                binding.tempHour1.text = temp.toString()+"°F"
+
+
+            } catch (e: Exception) {
+
+
+
+
             }
 
         }

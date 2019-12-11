@@ -55,7 +55,61 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final HorizontalScrollView horizontalScroll;
 
   @NonNull
+  public final TextView hour1;
+
+  @NonNull
+  public final TextView hour2;
+
+  @NonNull
+  public final TextView hour3;
+
+  @NonNull
+  public final TextView hour4;
+
+  @NonNull
+  public final TextView hour5;
+
+  @NonNull
+  public final TextView hour6;
+
+  @NonNull
+  public final TextView hour7;
+
+  @NonNull
+  public final TextView hour8;
+
+  @NonNull
+  public final TextView hour9;
+
+  @NonNull
   public final TextView humidity;
+
+  @NonNull
+  public final ImageView imgHour1;
+
+  @NonNull
+  public final ImageView imgHour2;
+
+  @NonNull
+  public final ImageView imgHour3;
+
+  @NonNull
+  public final ImageView imgHour4;
+
+  @NonNull
+  public final ImageView imgHour5;
+
+  @NonNull
+  public final ImageView imgHour6;
+
+  @NonNull
+  public final ImageView imgHour7;
+
+  @NonNull
+  public final ImageView imgHour8;
+
+  @NonNull
+  public final ImageView imgHour9;
 
   @NonNull
   public final ProgressBar loader;
@@ -76,6 +130,33 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView temp;
 
   @NonNull
+  public final TextView tempHour1;
+
+  @NonNull
+  public final TextView tempHour2;
+
+  @NonNull
+  public final TextView tempHour3;
+
+  @NonNull
+  public final TextView tempHour4;
+
+  @NonNull
+  public final TextView tempHour5;
+
+  @NonNull
+  public final TextView tempHour6;
+
+  @NonNull
+  public final TextView tempHour7;
+
+  @NonNull
+  public final TextView tempHour8;
+
+  @NonNull
+  public final TextView tempHour9;
+
+  @NonNull
   public final TextView todayTextView;
 
   @NonNull
@@ -90,9 +171,15 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView address, MyImageView androidAvatar, TextView dateTextView, TextView day1,
       TextView day2, TextView day3, TextView day4, TextView day5, TextView errorText,
-      ImageView hamburgermenu, HorizontalScrollView horizontalScroll, TextView humidity,
+      ImageView hamburgermenu, HorizontalScrollView horizontalScroll, TextView hour1,
+      TextView hour2, TextView hour3, TextView hour4, TextView hour5, TextView hour6,
+      TextView hour7, TextView hour8, TextView hour9, TextView humidity, ImageView imgHour1,
+      ImageView imgHour2, ImageView imgHour3, ImageView imgHour4, ImageView imgHour5,
+      ImageView imgHour6, ImageView imgHour7, ImageView imgHour8, ImageView imgHour9,
       ProgressBar loader, TextView maxTemp, TextView minTemp, LinearLayout overviewContainer,
-      TextView status, TextView temp, TextView todayTextView, TextView wind) {
+      TextView status, TextView temp, TextView tempHour1, TextView tempHour2, TextView tempHour3,
+      TextView tempHour4, TextView tempHour5, TextView tempHour6, TextView tempHour7,
+      TextView tempHour8, TextView tempHour9, TextView todayTextView, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
@@ -105,13 +192,40 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.errorText = errorText;
     this.hamburgermenu = hamburgermenu;
     this.horizontalScroll = horizontalScroll;
+    this.hour1 = hour1;
+    this.hour2 = hour2;
+    this.hour3 = hour3;
+    this.hour4 = hour4;
+    this.hour5 = hour5;
+    this.hour6 = hour6;
+    this.hour7 = hour7;
+    this.hour8 = hour8;
+    this.hour9 = hour9;
     this.humidity = humidity;
+    this.imgHour1 = imgHour1;
+    this.imgHour2 = imgHour2;
+    this.imgHour3 = imgHour3;
+    this.imgHour4 = imgHour4;
+    this.imgHour5 = imgHour5;
+    this.imgHour6 = imgHour6;
+    this.imgHour7 = imgHour7;
+    this.imgHour8 = imgHour8;
+    this.imgHour9 = imgHour9;
     this.loader = loader;
     this.maxTemp = maxTemp;
     this.minTemp = minTemp;
     this.overviewContainer = overviewContainer;
     this.status = status;
     this.temp = temp;
+    this.tempHour1 = tempHour1;
+    this.tempHour2 = tempHour2;
+    this.tempHour3 = tempHour3;
+    this.tempHour4 = tempHour4;
+    this.tempHour5 = tempHour5;
+    this.tempHour6 = tempHour6;
+    this.tempHour7 = tempHour7;
+    this.tempHour8 = tempHour8;
+    this.tempHour9 = tempHour9;
     this.todayTextView = todayTextView;
     this.wind = wind;
   }
