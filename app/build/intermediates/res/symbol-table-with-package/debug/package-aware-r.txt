@@ -14,7 +14,10 @@ anim abc_tooltip_exit
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array humidity
 array preloaded_fonts
+array temperature
+array weatherCondition
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -104,6 +107,7 @@ attr colorPrimary
 attr colorPrimaryDark
 attr colorSwitchThumbNormal
 attr commitIcon
+attr condition
 attr constraintSet
 attr constraint_referenced_ids
 attr content
@@ -154,6 +158,7 @@ attr height
 attr hideOnContentScroll
 attr homeAsUpIndicator
 attr homeLayout
+attr humidity
 attr icon
 attr iconTint
 attr iconTintMode
@@ -292,6 +297,7 @@ attr switchMinWidth
 attr switchPadding
 attr switchStyle
 attr switchTextAppearance
+attr temperature
 attr textAllCaps
 attr textAppearanceLargePopupMenu
 attr textAppearanceListItem
@@ -332,9 +338,10 @@ attr track
 attr trackTint
 attr trackTintMode
 attr ttcIndex
+attr use_legacy_parser
+attr vector_src
 attr viewInflaterClass
 attr voiceIcon
-attr weather_condition
 attr windowActionBar
 attr windowActionBarOverlay
 attr windowActionModeOverlay
@@ -348,16 +355,6 @@ attr windowNoTitle
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
-color a1
-color a10
-color a2
-color a3
-color a4
-color a5
-color a6
-color a7
-color a8
-color a9
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -396,22 +393,9 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
-color c1
-color c2
-color c3
-color c4
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
-color d1
-color d2
-color d3
-color d4
-color d5
-color d6
-color d7
-color d8
-color d9
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -422,6 +406,61 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color id200
+color id201
+color id202
+color id210
+color id211
+color id212
+color id221
+color id230
+color id231
+color id232
+color id300
+color id301
+color id302
+color id310
+color id311
+color id312
+color id313
+color id314
+color id321
+color id500
+color id501
+color id502
+color id503
+color id504
+color id511
+color id520
+color id521
+color id522
+color id531
+color id600
+color id601
+color id602
+color id611
+color id612
+color id613
+color id615
+color id616
+color id620
+color id621
+color id622
+color id701
+color id711
+color id721
+color id731
+color id741
+color id751
+color id761
+color id762
+color id771
+color id781
+color id800
+color id801
+color id802
+color id803
+color id804
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -434,7 +473,6 @@ color material_grey_600
 color material_grey_800
 color material_grey_850
 color material_grey_900
-color n1
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -445,29 +483,8 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color r1
-color r10
-color r2
-color r3
-color r4
-color r5
-color r6
-color r7
-color r8
-color r9
 color ripple_material_dark
 color ripple_material_light
-color s1
-color s10
-color s11
-color s2
-color s3
-color s4
-color s5
-color s6
-color s7
-color s8
-color s9
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -478,16 +495,6 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
-color t1
-color t10
-color t2
-color t3
-color t4
-color t5
-color t6
-color t7
-color t8
-color t9
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -699,9 +706,13 @@ drawable ic_android_logo_body
 drawable ic_android_logo_head
 drawable ic_android_logo_left_arm
 drawable ic_android_logo_right_arm
+drawable ic_bear_logo
+drawable ic_bear_logo_body
+drawable ic_bear_logo_head
+drawable ic_bear_logo_left_arm
+drawable ic_bear_logo_right_arm
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable image_weather_selector
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -752,6 +763,7 @@ id androidAvatar
 id arrow_down
 id arrow_up
 id async
+id back_to_one
 id barrier
 id beginning
 id blocking
@@ -761,6 +773,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id change_location_button
 id checkbox
 id chronometer
 id clip_horizontal
@@ -768,6 +781,7 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
+id current_location
 id custom
 id customPanel
 id dataBinding
@@ -800,6 +814,7 @@ id ifRoom
 id image
 id imageView2
 id info
+id inputEditText
 id invisible
 id italic
 id left
@@ -808,11 +823,13 @@ id line3
 id listMode
 id list_item
 id loader
+id location
 id maxTemp
 id message
 id middle
 id minTemp
 id multiply
+id navigation
 id never
 id none
 id normal
@@ -923,6 +940,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_main2
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -936,6 +954,7 @@ layout support_simple_spinner_dropdown_item
 menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation navigation
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1361,7 +1380,7 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
-styleable MyImageView weather_condition
+styleable MyImageView condition humidity temperature
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
@@ -1372,6 +1391,7 @@ styleable StateListDrawableItem android_drawable
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable TextAppearance android_textSize android_typeface android_textStyle android_textColor android_textColorHint android_textColorLink android_shadowColor android_shadowDx android_shadowDy android_shadowRadius android_fontFamily fontFamily textAllCaps
 styleable Toolbar android_gravity android_minHeight buttonGravity collapseContentDescription collapseIcon contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation logo logoDescription maxButtonHeight navigationContentDescription navigationIcon popupTheme subtitle subtitleTextAppearance subtitleTextColor title titleMargin titleMarginBottom titleMarginEnd titleMarginStart titleMarginTop titleMargins titleTextAppearance titleTextColor
+styleable VectorMasterView use_legacy_parser vector_src
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
