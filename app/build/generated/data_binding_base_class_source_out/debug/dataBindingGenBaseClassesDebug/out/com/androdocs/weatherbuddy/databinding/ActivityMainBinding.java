@@ -4,10 +4,10 @@ package com.androdocs.weatherbuddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,22 +28,16 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final MyImageView androidAvatar;
 
   @NonNull
-  public final TextView dateTextView;
+  public final ImageView arrowDown;
 
   @NonNull
-  public final TextView day1;
+  public final ImageView arrowUp;
 
   @NonNull
-  public final TextView day2;
+  public final TextView dateText;
 
   @NonNull
-  public final TextView day3;
-
-  @NonNull
-  public final TextView day4;
-
-  @NonNull
-  public final TextView day5;
+  public final TextClock digitalClock;
 
   @NonNull
   public final TextView errorText;
@@ -52,10 +46,10 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final ImageView hamburgermenu;
 
   @NonNull
-  public final HorizontalScrollView horizontalScroll;
+  public final TextView humidity;
 
   @NonNull
-  public final TextView humidity;
+  public final ImageView imageView2;
 
   @NonNull
   public final ProgressBar loader;
@@ -76,9 +70,6 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final TextView temp;
 
   @NonNull
-  public final TextView todayTextView;
-
-  @NonNull
   public final TextView wind;
 
   @Bindable
@@ -88,31 +79,28 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected AvatarViewModel mAvatarViewModel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView address, MyImageView androidAvatar, TextView dateTextView, TextView day1,
-      TextView day2, TextView day3, TextView day4, TextView day5, TextView errorText,
-      ImageView hamburgermenu, HorizontalScrollView horizontalScroll, TextView humidity,
-      ProgressBar loader, TextView maxTemp, TextView minTemp, LinearLayout overviewContainer,
-      TextView status, TextView temp, TextView todayTextView, TextView wind) {
+      TextView address, MyImageView androidAvatar, ImageView arrowDown, ImageView arrowUp,
+      TextView dateText, TextClock digitalClock, TextView errorText, ImageView hamburgermenu,
+      TextView humidity, ImageView imageView2, ProgressBar loader, TextView maxTemp,
+      TextView minTemp, LinearLayout overviewContainer, TextView status, TextView temp,
+      TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
-    this.dateTextView = dateTextView;
-    this.day1 = day1;
-    this.day2 = day2;
-    this.day3 = day3;
-    this.day4 = day4;
-    this.day5 = day5;
+    this.arrowDown = arrowDown;
+    this.arrowUp = arrowUp;
+    this.dateText = dateText;
+    this.digitalClock = digitalClock;
     this.errorText = errorText;
     this.hamburgermenu = hamburgermenu;
-    this.horizontalScroll = horizontalScroll;
     this.humidity = humidity;
+    this.imageView2 = imageView2;
     this.loader = loader;
     this.maxTemp = maxTemp;
     this.minTemp = minTemp;
     this.overviewContainer = overviewContainer;
     this.status = status;
     this.temp = temp;
-    this.todayTextView = todayTextView;
     this.wind = wind;
   }
 

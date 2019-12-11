@@ -15,7 +15,7 @@
 11-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-23:19
+13-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-26:19
 14        android:allowBackup="true"
 14-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,16 +50,23 @@
 30            </intent-filter>
 31        </activity>
 32
-33        <provider
-33-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-34            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-34-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-35            android:authorities="com.example.weatherbuddy.lifecycle-process"
-35-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-36            android:exported="false"
-36-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-37            android:multiprocess="true" />
-37-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-38    </application>
-39
-40</manifest>
+33        <meta-data
+33-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:23:9-25:57
+34            android:name="preloaded_fonts"
+34-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:24:13-43
+35            android:resource="@array/preloaded_fonts" />
+35-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:25:13-54
+36
+37        <provider
+37-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+38            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+39            android:authorities="com.example.weatherbuddy.lifecycle-process"
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+40            android:exported="false"
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+41            android:multiprocess="true" />
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+42    </application>
+43
+44</manifest>

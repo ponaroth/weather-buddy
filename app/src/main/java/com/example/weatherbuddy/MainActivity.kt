@@ -11,6 +11,10 @@ import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import org.json.JSONObject
 import java.net.URL
+import java.util.*
+import kotlin.math.roundToInt
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,11 +40,8 @@ class MainActivity : AppCompatActivity() {
         //set the data binding to have the initialized AvatarViewModel
         binding.avatarViewModel = viewModel
 
-
-
         //current activity is lifecycle owner of binding, binding can observe LiveData updates
         binding.lifecycleOwner = this
-
 
 
         // get reference to ImageView
@@ -102,9 +103,19 @@ class MainActivity : AppCompatActivity() {
                 val wind = jsonObj.getJSONObject("wind")
                 val weather = jsonObj.getJSONArray("weather").getJSONObject(0)
 
-                val temp = main.getString("temp")+"°C"
-                val tempMin = "Min Temp: " + main.getString("temp_min")+"°C"
-                val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
+                //Round temperature to a whole number
+                val tempRounded = main.getString("temp").toDouble().roundToInt()
+                val temp = "${tempRounded}°"
+
+                val tempMinRounded = main.getString("temp_min").toDouble().roundToInt()
+                val tempMin = "Low: $tempMinRounded°"
+
+                val tempMaxRounded = main.getString("temp_max").toDouble().roundToInt()
+                val tempMax = "High: $tempMaxRounded°"
+
+                //val temp = main.getString("temp")+"°C"
+                //val tempMin = "Low: " + main.getString("temp_min")+"°C"
+                //val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
                 val humidity = "Humidity: " + main.getString("humidity")
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
@@ -119,7 +130,6 @@ class MainActivity : AppCompatActivity() {
                 binding.maxTemp.text = tempMax
                 binding.wind.text = windSpeed
                 binding.humidity.text = humidity
-
 
                 // Views populated, Hiding the loader, Showing the main design
                 binding.loader.visibility = View.GONE
