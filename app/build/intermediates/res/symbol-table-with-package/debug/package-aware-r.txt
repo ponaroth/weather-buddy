@@ -698,7 +698,15 @@ drawable abc_vector_test
 drawable afternoon
 drawable arrow_down
 drawable arrow_up
+drawable bg_afternoon
+drawable bg_evening
 drawable bg_gradient
+drawable bg_late_afternoon
+drawable bg_late_evening
+drawable bg_late_morning
+drawable bg_late_night
+drawable bg_morning
+drawable bg_night
 drawable blue_back
 drawable hamburger_icon
 drawable ic_android_logo

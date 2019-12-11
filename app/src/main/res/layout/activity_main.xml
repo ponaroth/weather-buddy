@@ -17,7 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/afternoon">
+        android:background="@drawable/bg_evening">
 
         <!--<TextView
             android:id="@+id/temperature"
@@ -64,10 +64,10 @@
             android:background="@drawable/ic_android_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintHorizontal_bias="0.165"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.822"
+            app:layout_constraintVertical_bias="0.849"
             tools:ignore="ContentDescription" />
 
         <ImageView
