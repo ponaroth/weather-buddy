@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import com.example.weatherbuddy.Main2Activity
+import kotlinx.android.synthetic.main.activity_main.view.*
 import org.json.JSONObject
 import java.net.URL
 import java.util.*
@@ -65,7 +66,9 @@ class MainActivity : AppCompatActivity() {
 
 
         // get reference to ImageView
-        val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
+//        val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
+        val iv_click_me = binding.hamburgermenu
+
         // set on-click listener
         iv_click_me.setOnClickListener {
 

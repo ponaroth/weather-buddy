@@ -1,4 +1,4 @@
-#Wed Dec 11 18:44:54 PST 2019
+#Wed Dec 11 19:32:24 PST 2019
 base.0=/Users/margaritanuridjanian/Desktop/weather-buddy/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

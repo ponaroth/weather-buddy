@@ -1,34 +1,4 @@
-atedStateListDrawableItem_android_id
-#AnimatedStateListDrawableTransition
-4AnimatedStateListDrawableTransition_android_drawable
-2AnimatedStateListDrawableTransition_android_fromId
-6AnimatedStateListDrawableTransition_android_reversible
-0AnimatedStateListDrawableTransition_android_toId
-AppCompatImageView
-AppCompatImageView_android_src
-AppCompatImageView_srcCompat
-AppCompatImageView_tint
-AppCompatImageView_tintMode
-AppCompatSeekBar
-AppCompatSeekBar_android_thumb
-AppCompatSeekBar_tickMark
-AppCompatSeekBar_tickMarkTint
-!AppCompatSeekBar_tickMarkTintMode
-AppCompatTextHelper
-*AppCompatTextHelper_android_drawableBottom
-'AppCompatTextHelper_android_drawableEnd
-(AppCompatTextHelper_android_drawableLeft
-)AppCompatTextHelper_android_drawableRight
-)AppCompatTextHelper_android_drawableStart
-'AppCompatTextHelper_android_drawableTop
-*AppCompatTextHelper_android_textAppearance
-AppCompatTextView
-(AppCompatTextView_android_textAppearance
-%AppCompatTextView_autoSizeMaxTextSize
-%AppCompatTextView_autoSizeMinTextSize
-%AppCompatTextView_autoSizePresetSizes
-)AppCompatTextView_autoSizeStepGranularity
-"AppCompatTextView_autoSizeTextType
+eTextType
 *AppCompatTextView_firstBaselineToTopHeight
 AppCompatTextView_fontFamily
 ,AppCompatTextView_lastBaselineToBottomHeight
@@ -564,233 +534,61 @@ View_theme   E
  
  
  
-À Ú&   20BR0X†Pº	€€øðÀ>R0X†Pº	‚€øðÀ>R	0X†Pº	„€øðÀ>R
-0X†Pº	†€øðÀ>R0X†Pº	ˆ€øðÀ>R0X†Pº	Š€øðÀ>R0X†Pº	Œ€øðÀ>R0X†Pº	Ž€øðÀ>R0X†Pº	€øðÀ>R0X†Pº	’€øðÀ>R0X†Pº	”€øðÀ>R0X†Pº	–€øðÀ>R0X†Pº	˜€øðÀ>R0X†Pº	š€øðÀ>R0X†Pº	œ€øðÀ>R0X†Pº	ž€øðÀ>R0X†Pº	 €øðÀ>R0X†Pº	¢€øðÀ>R0X†Pº	¤€øðÀ>R0X†Pº	¦€øðÀ>R0X†Pº	¨€øðÀ>R0X†Pº	ª€øðÀ>R0X†Pº	¬€øðÀ>R0X†Pº	®€øðÀ>R0X†Pº	°€øðÀ>R 0X†Pº	²€øðÀ>R!0X†Pº	´€øðÀ>R"0X†Pº	¶€øðÀ>R#0X†Pº	¸€øðÀ>R$0X†Pº	º€øðÀ>R%0X†Pº	¼€øðÀ>R&0X†Pº	¾€øðÀ>R'0X†Pº	À€øðÀ>R(0X†Pº	Â€øðÀ>R)0X†Pº	Ä€øðÀ>R*0X†Pº	Æ€øðÀ>R+0X†Pº	È€øðÀ>R,0X†Pº	Ê€øðÀ>R-0X†Pº	Ì€øðÀ>R.0X†Pº	Ð€øðÀ>R/0X†Pº	Ò€øðÀ>  U
-androidx
-	appcompat
+À é#   ð20B R0X†Pº	€€ØðÀ>R	0X†Pº	‚€ØðÀ>R
+0X†Pº	„€ØðÀ>R0X†Pº	†€ØðÀ>R0X†Pº	ˆ€ØðÀ>R0X†Pº	Š€ØðÀ>R0X†Pº	Œ€ØðÀ>R0X†Pº	Ž€ØðÀ>R0X†Pº	€ØðÀ>R0X†Pº	’€ØðÀ>R0X†Pº	”€ØðÀ>R0X†Pº	–€ØðÀ>R0X†Pº	˜€ØðÀ>R0X†Pº	š€ØðÀ>R0X†Pº	œ€ØðÀ>R0X†Pº	ž€ØðÀ>R0X†Pº	 €ØðÀ>R0X†Pº	¢€ØðÀ>R0X†Pº	¤€ØðÀ>R0X†Pº	¦€ØðÀ>R0X†Pº	¨€ØðÀ>R0X†Pº	ª€ØðÀ>R0X†Pº	¬€ØðÀ>R0X†Pº	®€ØðÀ>R 0X†Pº	°€ØðÀ>R!0X†Pº	²€ØðÀ>R"0X†Pº	´€ØðÀ>R#0X†Pº	¶€ØðÀ>R$0X†Pº	¸€ØðÀ>R%0X†Pº	º€ØðÀ>R&0X†Pº	¼€ØðÀ>R'0X†Pº	¾€ØðÀ>R(0X†Pº	À€ØðÀ>R)0X†Pº	Â€ØðÀ>R*0X†Pº	Ä€ØðÀ>R+0X†Pº	Æ€ØðÀ>R,0X†Pº	È€ØðÀ>R-0X†Pº	Ê€ØðÀ>R.0X†Pº	Ì€ØðÀ>R/0X†Pº	Î€ØðÀ>  ¹
+com
+	androdocs
+weatherbuddy
 R
-string
-kotlin
-Any
-abc_action_bar_home_description
-Int
-abc_action_bar_up_description
-$abc_action_menu_overflow_description
-abc_action_mode_done
-!abc_activity_chooser_view_see_all
-*abc_activitychooserview_choose_application
-abc_capital_off
-abc_capital_on
-abc_font_family_body_1_material
-abc_font_family_body_2_material
-abc_font_family_button_material
- abc_font_family_caption_material
-"abc_font_family_display_1_material
-"abc_font_family_display_2_material
-"abc_font_family_display_3_material
-"abc_font_family_display_4_material
-!abc_font_family_headline_material
-abc_font_family_menu_material
- abc_font_family_subhead_material
-abc_font_family_title_material
-abc_menu_alt_shortcut_label
-abc_menu_ctrl_shortcut_label
-abc_menu_delete_shortcut_label
-abc_menu_enter_shortcut_label
- abc_menu_function_shortcut_label
-abc_menu_meta_shortcut_label
-abc_menu_shift_shortcut_label
-abc_menu_space_shortcut_label
-abc_menu_sym_shortcut_label
-abc_prepend_shortcut_label
-abc_search_hint
- abc_searchview_description_clear
- abc_searchview_description_query
-!abc_searchview_description_search
-!abc_searchview_description_submit
- abc_searchview_description_voice
-"abc_shareactionprovider_share_with
-.abc_shareactionprovider_share_with_application
- abc_toolbar_collapse_description
-search_menu_title
-%status_bar_notification_info_overflow   .
- 
- 
- 
- 
-
- 
- È    ‡20BR0X†Pº	€€ÐðÀ>R0X†Pº	‚€ÐðÀ>R	0X†Pº	„€ÐðÀ>R
-0X†Pº	†€ÐðÀ>R0X†Pº	ˆ€ÐðÀ>   Ç
-androidx
-	appcompat
-R
-integer
-kotlin
-Any
-abc_config_activityDefaultDur
-Int
-abc_config_activityShortDur
-cancel_button_image_alpha
-config_tooltipAnimTime
-#status_bar_notification_info_maxnum   .
- 
- 
- 
- 
-
- 
- À    20:	
-B   ~
-androidx
-	appcompat
-R
-kotlin
-Any
-anim
-attr
-bool
-color
-dimen
-drawable
-id
-integer
 layout
-string
-style
-	styleable   
- 
- 
- 
-
- ÀX   	œ20BR0X†Pº	‚€¸ðÀ>R0X†Pº	„€¸ðÀ>R	0X†Pº	†€¸ðÀ>R
-0X†Pº	ˆ€¸ðÀ>R0X†Pº	Š€¸ðÀ>R0X†Pº	Œ€¸ðÀ>R0X†Pº	Ž€¸ðÀ>R0X†Pº	€¸ðÀ>R0X†Pº	’€¸ðÀ>R0X†Pº	”€¸ðÀ>R0X†Pº	–€¸ðÀ>R0X†Pº	˜€¸ðÀ>R0X†Pº	š€¸ðÀ>R0X†Pº	œ€¸ðÀ>R0X†Pº	ž€¸ðÀ>R0X†Pº	 €¸ðÀ>R0X†Pº	¢€¸ðÀ>R0X†Pº	¤€¸ðÀ>R0X†Pº	¦€¸ðÀ>R0X†Pº	¨€¸ðÀ>R0X†Pº	ª€¸ðÀ>R0X†Pº	¬€¸ðÀ>R0X†Pº	®€¸ðÀ>R0X†Pº	°€¸ðÀ>R0X†Pº	²€¸ðÀ>R 0X†Pº	´€¸ðÀ>R!0X†Pº	¶€¸ðÀ>R"0X†Pº	¸€¸ðÀ>R#0X†Pº	º€¸ðÀ>R$0X†Pº	¼€¸ðÀ>R%0X†Pº	¾€¸ðÀ>R&0X†Pº	À€¸ðÀ>R'0X†Pº	Â€¸ðÀ>R(0X†Pº	Ä€¸ðÀ>R)0X†Pº	Æ€¸ðÀ>R*0X†Pº	È€¸ðÀ>R+0X†Pº	Ê€¸ðÀ>R,0X†Pº	Ì€¸ðÀ>R-0X†Pº	Î€¸ðÀ>R.0X†Pº	Ð€¸ðÀ>R/0X†Pº	Ò€¸ðÀ>R00X†Pº	Ô€¸ðÀ>R10X†Pº	Ö€¸ðÀ>R20X†Pº	Ø€¸ðÀ>R30X†Pº	Ú€¸ðÀ>R40X†Pº	Ü€¸ðÀ>R50X†Pº	Þ€¸ðÀ>R60X†Pº	à€¸ðÀ>R70X†Pº	â€¸ðÀ>R80X†Pº	ä€¸ðÀ>R90X†Pº	æ€¸ðÀ>R:0X†Pº	è€¸ðÀ>R;0X†Pº	ê€¸ðÀ>R<0X†Pº	ì€¸ðÀ>R=0X†Pº	î€¸ðÀ>R>0X†Pº	ð€¸ðÀ>R?0X†Pº	ò€¸ðÀ>R@0X†Pº	ô€¸ðÀ>RA0X†Pº	ö€¸ðÀ>RB0X†Pº	ø€¸ðÀ>RC0X†Pº	ú€¸ðÀ>RD0X†Pº	ü€¸ðÀ>RE0X†Pº	þ€¸ðÀ>RF0X†Pº	€¸ðÀ>RG0X†Pº	‚¸ðÀ>RH0X†Pº	„¸ðÀ>RI0X†Pº	†¸ðÀ>RJ0X†Pº	ˆ¸ðÀ>RK0X†Pº	Š¸ðÀ>RL0X†Pº	Œ¸ðÀ>RM0X†Pº	Ž¸ðÀ>RN0X†Pº	¸ðÀ>RO0X†Pº	’¸ðÀ>RP0X†Pº	”¸ðÀ>RQ0X†Pº	–¸ðÀ>RR0X†Pº	˜¸ðÀ>RS0X†Pº	š¸ðÀ>RT0X†Pº	œ¸ðÀ>RU0X†Pº	ž¸ðÀ>RV0X†Pº	 ¸ðÀ>RW0X†Pº	¢¸ðÀ>RX0X†Pº	¤¸ðÀ>RY0X†Pº	¦¸ðÀ>RZ0X†Pº	¨¸ðÀ>R[0X†Pº	Î¸ðÀ>R\0X†Pº	Ð¸ðÀ>R]0X†Pº	Ò¸ðÀ>R^0X†Pº	Ô¸ðÀ>R_0X†Pº	Ö¸ðÀ>R`0X†Pº	Ø¸ðÀ>Ra0X†Pº	Ú¸ðÀ>Rb0X†Pº	Ü¸ðÀ>Rc0X†Pº	Þ¸ðÀ>Rd0X†Pº	à¸ðÀ>Re0X†Pº	â¸ðÀ>Rf0X†Pº	ä¸ðÀ>Rg0X†Pº	ê¸ðÀ>Rh0X†Pº	ì¸ðÀ>  *
-androidx
-	appcompat
-R
-drawable
 kotlin
 Any
-abc_ab_share_pack_mtrl_alpha
+abc_action_bar_title_item
 Int
-'abc_action_bar_item_background_material
-abc_btn_borderless_material
-abc_btn_check_material
-abc_btn_check_to_on_mtrl_000
-abc_btn_check_to_on_mtrl_015
-abc_btn_colored_material
-abc_btn_default_mtrl_shape
-abc_btn_radio_material
-abc_btn_radio_to_on_mtrl_000
-abc_btn_radio_to_on_mtrl_015
-abc_btn_switch_to_on_mtrl_00001
-abc_btn_switch_to_on_mtrl_00012
-abc_cab_background_internal_bg
-abc_cab_background_top_material
-!abc_cab_background_top_mtrl_alpha
-abc_control_background_material
-abc_dialog_material_background
-abc_edit_text_material
-abc_ic_ab_back_material
-"abc_ic_arrow_drop_right_black_24dp
-abc_ic_clear_material
-#abc_ic_commit_search_api_mtrl_alpha
-abc_ic_go_search_api_material
-abc_ic_menu_copy_mtrl_am_alpha
-abc_ic_menu_cut_mtrl_alpha
-abc_ic_menu_overflow_material
-abc_ic_menu_paste_mtrl_am_alpha
- abc_ic_menu_selectall_mtrl_alpha
-abc_ic_menu_share_mtrl_alpha
-abc_ic_search_api_material
-abc_ic_star_black_16dp
-abc_ic_star_black_36dp
-abc_ic_star_black_48dp
-abc_ic_star_half_black_16dp
-abc_ic_star_half_black_36dp
-abc_ic_star_half_black_48dp
- abc_ic_voice_search_api_material
-abc_item_background_holo_dark
-abc_item_background_holo_light
-abc_list_divider_material
-abc_list_divider_mtrl_alpha
-abc_list_focused_holo
-abc_list_longpressed_holo
-abc_list_pressed_holo_dark
-abc_list_pressed_holo_light
-1abc_list_selector_background_transition_holo_dark
-2abc_list_selector_background_transition_holo_light
-$abc_list_selector_disabled_holo_dark
-%abc_list_selector_disabled_holo_light
-abc_list_selector_holo_dark
-abc_list_selector_holo_light
- abc_menu_hardkey_panel_mtrl_mult
-abc_popup_background_mtrl_mult
- abc_ratingbar_indicator_material
-abc_ratingbar_material
-abc_ratingbar_small_material
-#abc_scrubber_control_off_mtrl_alpha
-(abc_scrubber_control_to_pressed_mtrl_000
-(abc_scrubber_control_to_pressed_mtrl_005
-abc_scrubber_primary_mtrl_alpha
-abc_scrubber_track_mtrl_alpha
-abc_seekbar_thumb_material
-abc_seekbar_tick_mark_material
-abc_seekbar_track_material
-abc_spinner_mtrl_am_alpha
-)abc_spinner_textfield_background_material
-abc_switch_thumb_material
-abc_switch_track_mtrl_alpha
-abc_tab_indicator_material
-abc_tab_indicator_mtrl_alpha
-abc_text_cursor_material
-%abc_text_select_handle_left_mtrl_dark
-&abc_text_select_handle_left_mtrl_light
-'abc_text_select_handle_middle_mtrl_dark
-(abc_text_select_handle_middle_mtrl_light
-&abc_text_select_handle_right_mtrl_dark
-'abc_text_select_handle_right_mtrl_light
-"abc_textfield_activated_mtrl_alpha
- abc_textfield_default_mtrl_alpha
-)abc_textfield_search_activated_mtrl_alpha
-'abc_textfield_search_default_mtrl_alpha
-abc_textfield_search_material
-abc_vector_test
-notification_action_background
-notification_bg
-notification_bg_low
-notification_bg_low_normal
-notification_bg_low_pressed
-notification_bg_normal
-notification_bg_normal_pressed
-notification_icon_background
-notification_template_icon_bg
-!notification_template_icon_low_bg
-notification_tile_bg
-!notify_panel_notification_icon_bg
-tooltip_frame_dark
-tooltip_frame_light   .
+abc_action_bar_up_container
+abc_action_menu_item_layout
+abc_action_menu_layout
+abc_action_mode_bar
+#abc_action_mode_close_item_material
+abc_activity_chooser_view
+#abc_activity_chooser_view_list_item
+$abc_alert_dialog_button_bar_material
+abc_alert_dialog_material
+abc_alert_dialog_title_material
+abc_cascading_menu_item_layout
+abc_dialog_title_material
+abc_expanded_menu_layout
+abc_list_menu_item_checkbox
+abc_list_menu_item_icon
+abc_list_menu_item_layout
+abc_list_menu_item_radio
+!abc_popup_menu_header_item_layout
+abc_popup_menu_item_layout
+abc_screen_content_include
+abc_screen_simple
+%abc_screen_simple_overlay_action_mode
+abc_screen_toolbar
+$abc_search_dropdown_item_icons_2line
+abc_search_view
+abc_select_dialog_material
+abc_tooltip
+activity_main
+activity_main2
+notification_action
+notification_action_tombstone
+ notification_template_custom_big
+ notification_template_icon_group
+&notification_template_part_chronometer
+notification_template_part_time
+select_dialog_item_material
+"select_dialog_multichoice_material
+#select_dialog_singlechoice_material
+$support_simple_spinner_dropdown_item   4
  
  
- 
+
  
-
- 
- Ú    U20BR0X†Pº	€€ ðÀ>R0X†Pº	‚€ ðÀ>R	0X†Pº	„€ ðÀ>   ‹
-androidx
-	appcompat
-R
-bool
-kotlin
-Any
-abc_action_bar_embed_tabs
-Int
-abc_allow_stacked_button_bar
- abc_config_actionMenuItemAllCaps   .
- 
- 
- 
- 
-
- 
- 
+ 
+
+ 
+ 
