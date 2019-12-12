@@ -21,7 +21,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.weatherbuddy.Main2Activity" />
+        <activity
+            android:name="com.example.weatherbuddy.Main2Activity"
+            android:parentActivityName="com.androdocs.weatherbuddy.MainActivity" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name="com.androdocs.weatherbuddy.MainActivity"
             android:screenOrientation="portrait" >
