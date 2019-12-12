@@ -5,15 +5,13 @@
 Weather app with virtual pet
 
 
-The current weather is taken from Los Angeles,CA and displayed in Farehite using the "Imperial" command.
-
-# Project Title
-
-One Paragraph of project description goes here
-
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+clone the project:
+
+```
+git clone 
+```
 
 ### Prerequisites
 
