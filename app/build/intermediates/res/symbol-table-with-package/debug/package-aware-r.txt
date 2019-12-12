@@ -964,6 +964,7 @@ menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation
+raw city_list
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

@@ -9,8 +9,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.androdocs.weatherbuddy.MainActivity
+
 import com.androdocs.weatherbuddy.R
 import kotlinx.android.synthetic.main.activity_main2.*
+import org.json.JSONArray
 import java.net.URL
 
 
@@ -22,9 +24,47 @@ class Main2Activity : AppCompatActivity() {
 
 
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+//        private lateinit var binding: ActivityMain2Binding
+
+        val text = resources.openRawResource(R.raw.city_list)
+            .bufferedReader().use { it.readText() }
+//        val name = []
+        val myList = arrayListOf<String>()
+//        val Item = List<string>()
+        var i = 0
+        var myList1 = ""
+
+//        findViewById<TextView>(R.id.countries).text = myList1
+//
+//
+//        var jsonArray = JSONArray(text)
+//        for (jsonIndex in 0..(jsonArray.length() - 1)) {
+////            Log.d("JSON", jsonArray.getJSONObject(jsonIndex).getString( "name") )
+////            myList.append(jsonArray.getJSONObject(jsonIndex).getString( "name"))
+//            myList.add( i.toString() + " "+ jsonArray.getJSONObject(jsonIndex).getString( "name")+ ", "+jsonArray.getJSONObject(jsonIndex).getString( "country")+"\n")
+//
+//            i++
+//        }
+////        System.out.println(myList.toString())
+////        var i2 = 0
+////        for (i2 in myList){
+////            System.out.println(i2)
+////            System.out.println("\n")
+////        }
+//
+//
+////        myList1.append
+//        findViewById<TextView>(R.id.countries).text = myList.toString()
+//        textArea.setText(sb.toString());
+
+
+
 
         val extras = intent.extras
 

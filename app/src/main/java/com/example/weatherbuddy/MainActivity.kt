@@ -13,9 +13,19 @@ import com.example.weatherbuddy.AvatarViewModel
 import com.example.weatherbuddy.Main2Activity
 import kotlinx.android.synthetic.main.activity_main.view.*
 import org.json.JSONObject
+import java.io.BufferedReader
+import java.io.ByteArrayOutputStream
+import java.io.InputStreamReader
+import java.io.StringWriter
 import java.net.URL
 import java.util.*
 import kotlin.math.roundToInt
+import android.R.attr.country
+import android.graphics.ColorSpace
+import android.util.Log
+import org.json.JSONArray
+import android.R.string
+
 
 
 
@@ -37,6 +47,7 @@ class MainActivity : AppCompatActivity() {
 
         val extras = intent.extras
 
+
         if (extras != null) {
             val value = extras.getString("my_variable")
             System.out.println(value)
@@ -54,6 +65,73 @@ class MainActivity : AppCompatActivity() {
         }
 
         weatherTask().execute()
+
+//        val text = resources.openRawResource(R.raw.city_list)
+//            .bufferedReader().use { it.readText() }
+////        val name = []
+//        val myList = arrayListOf<String>()
+////        val Item = List<string>()
+//        var i = 0
+//
+//
+//        var jsonArray = JSONArray(text)
+//        for (jsonIndex in 0..(jsonArray.length() - 1)) {
+////            Log.d("JSON", jsonArray.getJSONObject(jsonIndex).getString( "name") )
+////            myList.append(jsonArray.getJSONObject(jsonIndex).getString( "name"))
+//            myList.add( i.toString() + " "+ jsonArray.getJSONObject(jsonIndex).getString( "name")+ ", "+jsonArray.getJSONObject(jsonIndex).getString( "country"))
+//
+//            i++
+//        }
+//        System.out.println(myList)
+//        val `in`: String
+//        val reader = JSONObject(text)
+//
+//        val sys = reader.getJSONObject("country")
+//        print(sys)
+//        country = sys.getString("country").toInt()
+
+//        for (i in 0 until text.length()) {
+//            val json_data = jsonArray.getJSONObject(i)
+//            name[i] = json_data.getString("tienda")
+//
+//        }
+//
+//        var tags = ArrayList<String>()
+//        // Add the Tag to List
+//        tags.add("Android")
+//        tags.add("Angular")
+//        //Create a Object of Post
+//        var post = Post("Json Tutorial", "www.nplix.com", "Pawan Kumar", tags)
+//        //Create a Object of Gson
+//        var gson = Gson()
+//        //Convert the Json object to JsonString
+//        var jsonString:String = gson.toJson(post)
+
+
+//        text.name
+
+
+// i being the counter of your loop
+//        String catId = text.get(i).get("name");
+//        if(catId == 3) {
+//            ... your code
+//        }
+        //        System.out.println(text)
+
+//        val `is` = resources.openRawResource(R.raw.city_list)
+//        val writer = StringWriter()
+//        val buffer = CharArray(1024)
+//        try {
+//            val reader = BufferedReader(InputStreamReader(`is`, "UTF-8"))
+//            var n: Int
+//            while ((n = reader.read(buffer)) != -1) {
+//                writer.write(buffer, 0, n)
+//            }
+//        } finally {
+//            `is`.close()
+//        }
+//
+//        val jsonString = writer.toString()
 
         //Initialize AvatarViewModel
         viewModel = ViewModelProviders.of(this).get(AvatarViewModel::class.java)
