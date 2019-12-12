@@ -2976,22 +2976,10 @@ public final class R {
      */
     public static final int ttcIndex=0x7f03013f;
     /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int use_legacy_parser=0x7f030140;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int vector_src=0x7f030141;
-    /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f030142;
+    public static final int viewInflaterClass=0x7f030140;
     /**
      * Voice button icon
      * <p>May be a reference to another resource, in the form
@@ -2999,14 +2987,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f030143;
+    public static final int voiceIcon=0x7f030141;
     /**
      * Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f030144;
+    public static final int windowActionBar=0x7f030142;
     /**
      * Flag indicating whether this window's Action Bar should overlay
      * application content. Does nothing if the window would not
@@ -3014,14 +3002,14 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f030145;
+    public static final int windowActionBarOverlay=0x7f030143;
     /**
      * Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f030146;
+    public static final int windowActionModeOverlay=0x7f030144;
     /**
      * A fixed height for the window along the major axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -3036,7 +3024,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f030147;
+    public static final int windowFixedHeightMajor=0x7f030145;
     /**
      * A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -3051,7 +3039,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f030148;
+    public static final int windowFixedHeightMinor=0x7f030146;
     /**
      * A fixed width for the window along the major axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -3066,7 +3054,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f030149;
+    public static final int windowFixedWidthMajor=0x7f030147;
     /**
      * A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -3081,7 +3069,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f03014a;
+    public static final int windowFixedWidthMinor=0x7f030148;
     /**
      * The minimum width the window is allowed to be, along the major
      * axis of the screen.  That is, when in landscape.  Can be either
@@ -3097,7 +3085,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f03014b;
+    public static final int windowMinWidthMajor=0x7f030149;
     /**
      * The minimum width the window is allowed to be, along the minor
      * axis of the screen.  That is, when in portrait.  Can be either
@@ -3113,13 +3101,13 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f03014c;
+    public static final int windowMinWidthMinor=0x7f03014a;
     /**
      * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f03014d;
+    public static final int windowNoTitle=0x7f03014b;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f040000;
@@ -3486,15 +3474,15 @@ public final class R {
     public static final int blue_back=0x7f070061;
     public static final int hamburger_icon=0x7f070062;
     public static final int ic_android_logo=0x7f070063;
-    public static final int ic_android_logo_body=0x7f070064;
-    public static final int ic_android_logo_head=0x7f070065;
-    public static final int ic_android_logo_left_arm=0x7f070066;
-    public static final int ic_android_logo_right_arm=0x7f070067;
-    public static final int ic_bear_logo=0x7f070068;
-    public static final int ic_bear_logo_body=0x7f070069;
-    public static final int ic_bear_logo_head=0x7f07006a;
-    public static final int ic_bear_logo_left_arm=0x7f07006b;
-    public static final int ic_bear_logo_right_arm=0x7f07006c;
+    public static final int ic_bear_logo=0x7f070064;
+    public static final int ic_bear_logo_body=0x7f070065;
+    public static final int ic_bear_logo_body_fur=0x7f070066;
+    public static final int ic_bear_logo_head=0x7f070067;
+    public static final int ic_bear_logo_head_fur=0x7f070068;
+    public static final int ic_bear_logo_left_arm=0x7f070069;
+    public static final int ic_bear_logo_left_arm_fur=0x7f07006a;
+    public static final int ic_bear_logo_right_arm=0x7f07006b;
+    public static final int ic_bear_logo_right_arm_fur=0x7f07006c;
     public static final int ic_launcher_background=0x7f07006d;
     public static final int ic_launcher_foreground=0x7f07006e;
     public static final int notification_action_background=0x7f07006f;
@@ -5999,10 +5987,10 @@ public final class R {
       0x7f030119, 0x7f03011a, 0x7f03011b, 0x7f03011c, 
       0x7f03011d, 0x7f03011e, 0x7f03011f, 0x7f030120, 
       0x7f030121, 0x7f030122, 0x7f030137, 0x7f030138, 
-      0x7f030139, 0x7f03013a, 0x7f030142, 0x7f030144, 
-      0x7f030145, 0x7f030146, 0x7f030147, 0x7f030148, 
-      0x7f030149, 0x7f03014a, 0x7f03014b, 0x7f03014c, 
-      0x7f03014d
+      0x7f030139, 0x7f03013a, 0x7f030140, 0x7f030142, 
+      0x7f030143, 0x7f030144, 0x7f030145, 0x7f030146, 
+      0x7f030147, 0x7f030148, 0x7f030149, 0x7f03014a, 
+      0x7f03014b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -12321,7 +12309,7 @@ public final class R {
       0x7f030049, 0x7f030058, 0x7f030067, 0x7f030087, 
       0x7f030090, 0x7f030098, 0x7f0300f4, 0x7f0300f5, 
       0x7f0300fa, 0x7f0300fb, 0x7f03010d, 0x7f030112, 
-      0x7f030143
+      0x7f030141
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -13787,44 +13775,6 @@ public final class R {
      * @attr name com.example.weatherbuddy:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
-    /**
-     * Attributes that can be used with a VectorMasterView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #VectorMasterView_use_legacy_parser com.example.weatherbuddy:use_legacy_parser}</code></td><td></td></tr>
-     * <tr><td><code>{@link #VectorMasterView_vector_src com.example.weatherbuddy:vector_src}</code></td><td></td></tr>
-     * </table>
-     * @see #VectorMasterView_use_legacy_parser
-     * @see #VectorMasterView_vector_src
-     */
-    public static final int[] VectorMasterView={
-      0x7f030140, 0x7f030141
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.example.weatherbuddy.R.attr#use_legacy_parser}
-     * attribute's value can be found in the {@link #VectorMasterView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.example.weatherbuddy:use_legacy_parser
-     */
-    public static final int VectorMasterView_use_legacy_parser=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.example.weatherbuddy.R.attr#vector_src}
-     * attribute's value can be found in the {@link #VectorMasterView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.example.weatherbuddy:vector_src
-     */
-    public static final int VectorMasterView_vector_src=1;
     /**
      * Attributes that can be used with a View.
      * <p>Includes the following attributes:</p>

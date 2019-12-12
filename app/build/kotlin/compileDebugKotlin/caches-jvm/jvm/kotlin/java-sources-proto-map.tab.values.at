@@ -1,6 +1,4 @@
-eTextType
-*AppCompatTextView_firstBaselineToTopHeight
-AppCompatTextView_fontFamily
+mpatTextView_fontFamily
 ,AppCompatTextView_lastBaselineToBottomHeight
 AppCompatTextView_lineHeight
 AppCompatTextView_textAllCaps
@@ -507,9 +505,6 @@ $Toolbar_navigationContentDescription
 Toolbar_titleMargins
 Toolbar_titleTextAppearance
 Toolbar_titleTextColor
-VectorMasterView
-"VectorMasterView_use_legacy_parser
-VectorMasterView_vector_src
 View
 ViewBackgroundHelper
 'ViewBackgroundHelper_android_background

@@ -28,22 +28,21 @@ Color.parseColor takes the hex string value and gives RGB Alpha values from 0 to
 
 class ColorChooser {
 
-    private lateinit var colorMap: ArrayMap<String, String>
+    private var colorMap: ArrayMap<String, String> = ArrayMap<String, String>()
 
     constructor(
         weatherCondition: Array<String>,
         humidity: Array<String>,
         temperature: Array<String>
     ) {
-        colorMap = ArrayMap<String, String>()
-        setWeatherConditionColor(weatherCondition)
+        setWeatherConditionColors(weatherCondition)
         setTemperatureColors(temperature)
         setHumidityColors(humidity)
     }
 
     //https://stackoverflow.com/a/17584066 help with arrays.xml and accessing them
     //https://stackoverflow.com/a/15068804 getting a resource without context
-    private fun setWeatherConditionColor(weatherCondition: Array<String>) {
+    private fun setWeatherConditionColors(weatherCondition: Array<String>) {
 
         val idList = listOf( "200", "201", "202", "210", "211", "212", "221", "230", "231", "232",
             "300", "301", "302", "310", "311", "312", "313", "314", "321",
@@ -62,6 +61,8 @@ class ColorChooser {
     }
 
     public fun getWeatherConditionColor(value: String): String {
+
+        Log.i("ColorChooser", "$value")
         return colorMap[value]!!
     }
 
@@ -114,7 +115,7 @@ class ColorChooser {
         else
             temp = 0
 
-        return colorMap[temp.toString()]!!
+        return colorMap[temp.toString() + "%"]!!
     }
 
     private fun setTemperatureColors(temperature: Array<String>) {
@@ -129,7 +130,7 @@ class ColorChooser {
         }
     }
 
-    public fun getTemperatureColor(value: String): String {
+    public fun getTemperatureColor(value: String): String? {
 
         var temp = value.toInt()
 
@@ -184,8 +185,7 @@ class ColorChooser {
         else
             temp = 120
 
-
-        return colorMap[temp.toString()]!!
+        return colorMap[temp.toString() + "F"]!!
     }
 
 }
