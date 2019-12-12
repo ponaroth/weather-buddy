@@ -78,9 +78,6 @@ class ColorChooser {
 
     public fun getHumidityColor(value: String): String {
 
-
-        Log.i("ColorChooserHumid", "$value")
-
         var temp = value.toInt()
 
         if(temp >= 100){

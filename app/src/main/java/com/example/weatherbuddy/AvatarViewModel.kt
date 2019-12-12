@@ -21,23 +21,16 @@ import com.androdocs.weatherbuddy.R
 class AvatarViewModel : ViewModel() {
 
     //The current avatar ImageView
-    private var _avatar = MutableLiveData<MyImageView>()
-    val avatar: LiveData<MyImageView>
-        get() = _avatar
+    val avatar: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current weather condition
-    private var _weatherCondition = MutableLiveData<String>()
-    val weatherCondition: LiveData<String>
-        get() = _weatherCondition
+    val weatherCondition: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current humidity
-    private var _humidity = MutableLiveData<String>()
     val humidity: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current temperature
-    private var _temperature = MutableLiveData<String>()
-    val temperature: LiveData<String>
-        get() = _temperature
+    val temperature: MutableLiveData<String> = MutableLiveData<String>()
 
     override fun onCleared() {
         super.onCleared()

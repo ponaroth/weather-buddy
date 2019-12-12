@@ -19,21 +19,32 @@ import org.json.JSONObject
 import java.net.URL
 import java.util.*
 import kotlin.math.roundToInt
-
+import androidx.core.app.ComponentActivity
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import java.text.SimpleDateFormat
 
 
 class MainActivity : AppCompatActivity() {
 
-    var CITY: String = "Los Angeles,US"
+    var CITY: String = "Los Angeles, US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
+    var weatherID = "-99"
 
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var viewModel: AvatarViewModel
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val pattern = "HH"
+        var simpleDateFormat = SimpleDateFormat(pattern)
+        var date = simpleDateFormat.format(Date())
+        Log.i("MainActivity", "Hour: $date")
 
         //bind activity_main.xml
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -73,10 +84,30 @@ class MainActivity : AppCompatActivity() {
             //get rid of the "Humidity: " part of the String
             val finalHumidity = newHumidity.removeRange(0, 10)
 
-            Log.i("MainActivity", "$finalHumidity")
+            //Log.i("MainActivity", "$finalHumidity")
 
             binding.androidAvatar.setRightArmColor(finalHumidity)
             binding.androidAvatar.setLeftArmColor(finalHumidity)
+        })
+
+        viewModel.temperature.observe(this, androidx.lifecycle.Observer { newTemperature: String ->
+
+            //get rid of the "Humidity: " part of the String
+            val finalTemperature = newTemperature.substring(0, newTemperature.lastIndex)
+
+            //Log.i("MainActivity", "Here is the final temp: $finalTemperature")
+
+            binding.androidAvatar.setHeadColor(finalTemperature)
+        })
+
+        viewModel.weatherCondition.observe(this, androidx.lifecycle.Observer { newCondition: String ->
+
+            //get rid of the "Humidity: " part of the String
+            //val finalCondition = newCondition.removeRange(0, 10)
+
+            //Log.i("MainActivity", "Here is the final: $newCondition")
+
+            binding.androidAvatar.setBodyColor(newCondition)
         })
 
 
@@ -164,10 +195,8 @@ class MainActivity : AppCompatActivity() {
                 val humidity = "Humidity: " + main.getString("humidity")
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
-
-                val observedHumidity = main.getString("humidity")
-
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
+                weatherID = weather.getString("id")
 
                 // Populating extracted data into our views
                 binding.address.text = address
@@ -190,9 +219,10 @@ class MainActivity : AppCompatActivity() {
                 binding.errorText.visibility = View.GONE
             }
 
-            Log.i("MainActivity", "${binding.humidity.text}")
 
             viewModel.humidity.setValue(binding.humidity.text.toString())
+            viewModel.temperature.setValue(binding.temp.text.toString())
+            viewModel.weatherCondition.setValue(weatherID)
 
 
         }

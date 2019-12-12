@@ -84,7 +84,6 @@ class MyImageView : ImageView {
     }
 
     fun setLeftArmColor(value: String) {
-        Log.i("MyImageView60", "$value")
         val color = colorChooser.getHumidityColor(value)
         layerDrawable.getDrawable(0).setTint(Color.parseColor(color))
     }
