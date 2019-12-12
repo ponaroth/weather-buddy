@@ -61,8 +61,6 @@ class ColorChooser {
     }
 
     public fun getWeatherConditionColor(value: String): String {
-
-        Log.i("ColorChooser", "$value")
         return colorMap[value]!!
     }
 
@@ -79,6 +77,9 @@ class ColorChooser {
     }
 
     public fun getHumidityColor(value: String): String {
+
+
+        Log.i("ColorChooserHumid", "$value")
 
         var temp = value.toInt()
 

@@ -8,7 +8,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.androdocs.weatherbuddy.R
-import kotlinx.android.synthetic.main.activity_main.view.*
+
+
 
 
 /*
@@ -31,17 +32,12 @@ class AvatarViewModel : ViewModel() {
 
     //The current humidity
     private var _humidity = MutableLiveData<String>()
-    val humidity: LiveData<String>
-        get() = _humidity
+    val humidity: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current temperature
     private var _temperature = MutableLiveData<String>()
     val temperature: LiveData<String>
         get() = _temperature
-
-    init {
-       // _weatherCondition.value = "701"
-    }
 
     override fun onCleared() {
         super.onCleared()

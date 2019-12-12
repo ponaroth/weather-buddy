@@ -3,6 +3,7 @@ package com.androdocs.weatherbuddy
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,8 @@ import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import com.example.weatherbuddy.Main2Activity
+import com.example.weatherbuddy.MyImageView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import org.json.JSONObject
 import java.net.URL
@@ -63,6 +66,18 @@ class MainActivity : AppCompatActivity() {
 
         //current activity is lifecycle owner of binding, binding can observe LiveData updates
         binding.lifecycleOwner = this
+
+
+        viewModel.humidity.observe(this, androidx.lifecycle.Observer { newHumidity: String ->
+
+            //get rid of the "Humidity: " part of the String
+            val finalHumidity = newHumidity.removeRange(0, 10)
+
+            Log.i("MainActivity", "$finalHumidity")
+
+            binding.androidAvatar.setRightArmColor(finalHumidity)
+            binding.androidAvatar.setLeftArmColor(finalHumidity)
+        })
 
 
         // get reference to ImageView
@@ -150,6 +165,8 @@ class MainActivity : AppCompatActivity() {
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
 
+                val observedHumidity = main.getString("humidity")
+
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
 
                 // Populating extracted data into our views
@@ -172,6 +189,11 @@ class MainActivity : AppCompatActivity() {
                 binding.loader.visibility = View.GONE
                 binding.errorText.visibility = View.GONE
             }
+
+            Log.i("MainActivity", "${binding.humidity.text}")
+
+            viewModel.humidity.setValue(binding.humidity.text.toString())
+
 
         }
     }

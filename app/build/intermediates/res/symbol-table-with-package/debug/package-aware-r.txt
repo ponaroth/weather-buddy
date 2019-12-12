@@ -107,7 +107,6 @@ attr colorPrimary
 attr colorPrimaryDark
 attr colorSwitchThumbNormal
 attr commitIcon
-attr condition
 attr constraintSet
 attr constraint_referenced_ids
 attr content
@@ -158,7 +157,6 @@ attr height
 attr hideOnContentScroll
 attr homeAsUpIndicator
 attr homeLayout
-attr humidity
 attr icon
 attr iconTint
 attr iconTintMode
@@ -297,7 +295,6 @@ attr switchMinWidth
 attr switchPadding
 attr switchStyle
 attr switchTextAppearance
-attr temperature
 attr textAllCaps
 attr textAppearanceLargePopupMenu
 attr textAppearanceListItem
@@ -1387,7 +1384,6 @@ styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerti
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
-styleable MyImageView condition humidity temperature
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
