@@ -2,7 +2,7 @@
 
 # weather-buddy
 
-Weather app with virtual pet
+A weather app with virtual pet
 
 
 ## Getting Started
@@ -15,11 +15,18 @@ git clone
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
 ```
-Give examples
+Download Android Studio 
 ```
+https://developer.android.com/
+
+```
+Download Java Development Kit
+```
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+
 
 ### Installing
 
