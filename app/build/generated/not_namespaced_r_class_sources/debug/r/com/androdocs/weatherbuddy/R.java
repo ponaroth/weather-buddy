@@ -3501,9 +3501,10 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f070070;
     public static final int notification_tile_bg=0x7f070071;
     public static final int notify_panel_notification_icon_bg=0x7f070072;
-    public static final int sunny=0x7f070073;
-    public static final int tooltip_frame_dark=0x7f070074;
-    public static final int tooltip_frame_light=0x7f070075;
+    public static final int settings=0x7f070073;
+    public static final int sunny=0x7f070074;
+    public static final int tooltip_frame_dark=0x7f070075;
+    public static final int tooltip_frame_light=0x7f070076;
   }
   public static final class font {
     public static final int abel=0x7f080000;

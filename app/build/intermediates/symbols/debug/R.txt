@@ -724,9 +724,10 @@ int drawable notification_template_icon_bg 0x7f07006f
 int drawable notification_template_icon_low_bg 0x7f070070
 int drawable notification_tile_bg 0x7f070071
 int drawable notify_panel_notification_icon_bg 0x7f070072
-int drawable sunny 0x7f070073
-int drawable tooltip_frame_dark 0x7f070074
-int drawable tooltip_frame_light 0x7f070075
+int drawable settings 0x7f070073
+int drawable sunny 0x7f070074
+int drawable tooltip_frame_dark 0x7f070075
+int drawable tooltip_frame_light 0x7f070076
 int font abel 0x7f080000
 int id ALT 0x7f090000
 int id CTRL 0x7f090001

@@ -1,5 +1,6 @@
 package com.androdocs.weatherbuddy
 
+import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
+import com.example.weatherbuddy.Main2Activity
 import org.json.JSONObject
 import java.net.URL
 import java.util.*
@@ -18,7 +20,7 @@ import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
-    val CITY: String = "Los Angeles,US"
+    var CITY: String = "Los Angeles,US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
 
     private lateinit var binding: ActivityMainBinding
@@ -31,6 +33,24 @@ class MainActivity : AppCompatActivity() {
 
         //bind activity_main.xml
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        val extras = intent.extras
+
+        if (extras != null) {
+            val value = extras.getString("my_variable")
+            System.out.println(value)
+
+            if(value != CITY){
+                System.out.println("VALUE DOES NOT EQUAL CITY"+value+"not"+CITY)
+
+//                findViewById<TextView>(R.id.current_location).text = value
+                CITY = value
+                System.out.println("NEW CITY ADDED!City is now" + CITY)
+
+            }
+
+
+        }
 
         weatherTask().execute()
 
@@ -48,24 +68,31 @@ class MainActivity : AppCompatActivity() {
         val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
         // set on-click listener
         iv_click_me.setOnClickListener {
+
+            Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+            val intent1 = Intent(this, Main2Activity::class.java)//firstActivity
+//                    val value = "value"
+            intent1.putExtra("my_variable", CITY)
+            startActivity(intent1)
+
             // your code to perform when the user clicks on the ImageView
 //            Toast.makeText(this@MainActivity, "You clicked on ImageView.", Toast.LENGTH_SHORT)
 //                .show()
 
 //            We add code here for menu
             //Creating the instance of PopupMenu
-            val popup = PopupMenu(this@MainActivity, iv_click_me)
-//            //Inflating the Popup using xml file
-            popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
-
-            //registering popup with OnMenuItemClickListener
-//            popup.setOnMenuItemClickListener { item ->
-//                Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT)
-//                    .show()
-            true
+//            val popup = PopupMenu(this@MainActivity, iv_click_me)
+////            //Inflating the Popup using xml file
+//            popup.menuInflater.inflate(R.menu.popup_menu, popup.menu)
+//
+//            //registering popup with OnMenuItemClickListener
+////            popup.setOnMenuItemClickListener { item ->
+////                Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT)
+////                    .show()
+//            true
 //            }
 
-            popup.show()//showing popup menu
+//            popup.show()//showing popup menu
 //            We end code here for menu
         }
 
@@ -130,6 +157,7 @@ class MainActivity : AppCompatActivity() {
                 binding.maxTemp.text = tempMax
                 binding.wind.text = windSpeed
                 binding.humidity.text = humidity
+                binding.dateText.text = CITY
 
                 // Views populated, Hiding the loader, Showing the main design
                 binding.loader.visibility = View.GONE
