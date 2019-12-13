@@ -67,11 +67,4 @@ android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

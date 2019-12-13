@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.weatherbuddy.Main3Activity" />
         <activity
             android:name="com.example.weatherbuddy.Main2Activity"
             android:parentActivityName="com.androdocs.weatherbuddy.MainActivity" >
