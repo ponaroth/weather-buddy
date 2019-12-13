@@ -12,17 +12,12 @@ import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import com.example.weatherbuddy.Main2Activity
-import com.example.weatherbuddy.MyImageView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 import org.json.JSONObject
 import java.net.URL
 import java.util.*
 import kotlin.math.roundToInt
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.androdocs.weatherbuddy.R.drawable.snow
+import com.androdocs.weatherbuddy.R.drawable.rain
 import java.text.SimpleDateFormat
 
 
@@ -195,6 +190,7 @@ class MainActivity : AppCompatActivity() {
                 val humidity = "Humidity: " + main.getString("humidity")
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
+                val weatherMain = weather.getString("main")
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
                 weatherID = weather.getString("id")
 
@@ -207,6 +203,19 @@ class MainActivity : AppCompatActivity() {
                 binding.wind.text = windSpeed
                 binding.humidity.text = humidity
                 binding.dateText.text = CITY
+
+
+                if (weatherMain.contains("Rain", ignoreCase = true)) {
+                    binding.imageView2.setImageResource(rain)
+
+                    }
+
+                if (weatherMain.contains("Snow", ignoreCase = true)) {
+                    binding.imageView2.setImageResource(snow)
+
+                }
+
+
 
                 // Views populated, Hiding the loader, Showing the main design
                 binding.loader.visibility = View.GONE

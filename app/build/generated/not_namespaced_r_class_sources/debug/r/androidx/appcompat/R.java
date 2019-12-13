@@ -613,8 +613,8 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f070078;
         public static final int notification_tile_bg = 0x7f070079;
         public static final int notify_panel_notification_icon_bg = 0x7f07007a;
-        public static final int tooltip_frame_dark = 0x7f07007d;
-        public static final int tooltip_frame_light = 0x7f07007e;
+        public static final int tooltip_frame_dark = 0x7f07007f;
+        public static final int tooltip_frame_light = 0x7f070080;
     }
     public static final class id {
         private id() {}
