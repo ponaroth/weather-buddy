@@ -97,7 +97,7 @@ If the location is not valid, or blank the location will remain the same as the 
 
 # Ashley
 
-<img src="https://raw.githubusercontent.com/ajetty/Images/master/BearScreenShot.png">
+<https://raw.githubusercontent.com/ajetty/Images/master/BearAnimate.gif">
 
 
 
