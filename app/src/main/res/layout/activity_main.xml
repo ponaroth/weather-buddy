@@ -15,9 +15,9 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contrainLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_evening">
+        android:layout_height="match_parent" >
 
         <!--<TextView
             android:id="@+id/temperature"

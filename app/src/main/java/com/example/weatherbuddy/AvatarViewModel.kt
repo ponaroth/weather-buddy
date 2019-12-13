@@ -1,5 +1,6 @@
 package com.example.weatherbuddy
 
+import android.graphics.drawable.Drawable
 import android.os.Parcel
 import android.os.Parcelable
 import android.util.Log
@@ -8,8 +9,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.androdocs.weatherbuddy.R
-
-
+import java.text.SimpleDateFormat
 
 
 /*
@@ -20,8 +20,9 @@ import com.androdocs.weatherbuddy.R
 */
 class AvatarViewModel : ViewModel() {
 
+
     //The current avatar ImageView
-    val avatar: MutableLiveData<String> = MutableLiveData<String>()
+    val avatar: MutableLiveData<Drawable> = MutableLiveData<Drawable>()
 
     //The current weather condition
     val weatherCondition: MutableLiveData<String> = MutableLiveData<String>()
@@ -36,5 +37,8 @@ class AvatarViewModel : ViewModel() {
         super.onCleared()
         Log.i("AvatarViewModel", "AvatarViewModel destroyed!")
     }
+
+    //The current Background that depends on Time
+    val timeBackground: MutableLiveData<SimpleDateFormat> = MutableLiveData<SimpleDateFormat>()
 
 }

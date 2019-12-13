@@ -1,12 +1,15 @@
 package com.androdocs.weatherbuddy
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
@@ -30,6 +33,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var viewModel: AvatarViewModel
+
+    //for current time
+    private lateinit var simpleDateFormat: SimpleDateFormat
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -105,6 +111,20 @@ class MainActivity : AppCompatActivity() {
             binding.androidAvatar.setBodyColor(newCondition)
         })
 
+        viewModel.timeBackground.observe(this, androidx.lifecycle.Observer { newTime: SimpleDateFormat ->
+
+
+
+            val newPattern = "HH"
+            newTime.applyPattern(newPattern)
+            var newDate = newTime.format(Date())
+            Log.i("MainActivity", "Hour: $newDate")
+
+            getBackground(newDate.toInt())
+        })
+
+        viewModel.timeBackground.setValue(simpleDateFormat)
+
 
         // get reference to ImageView
 //        val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
@@ -139,6 +159,7 @@ class MainActivity : AppCompatActivity() {
 //            popup.show()//showing popup menu
 //            We end code here for menu
         }
+
 
 
     }
@@ -234,6 +255,32 @@ class MainActivity : AppCompatActivity() {
             viewModel.weatherCondition.setValue(weatherID)
 
 
+        }
+    }
+
+
+    private fun getBackground(timeBackground: Int) {
+
+        if(timeBackground in 6..8){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_morning)
+        }
+        else if(timeBackground in 9..11){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_morning)
+        }
+        else if(timeBackground in 12..3){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_afternoon)
+        }
+        else if(timeBackground in 4..5){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_afternoon)
+        }
+        else if(timeBackground in 6..7){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_evening)
+        }
+        else if(timeBackground in 8..12){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_night)
+        }
+        else {
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_night)
         }
     }
 }
