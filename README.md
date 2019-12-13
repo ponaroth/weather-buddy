@@ -1,8 +1,25 @@
 ![Picture](https://github.com/bhern154/bhern154.github.io/blob/master/banner.jpg)
 
-# weather-buddy
+# Weather Buddy Android App
 
-A weather app with virtual pet
+A weather app with virtual pet to keep you company!
+
+What we used for our app:
+* Weather API
+* Linear Constraints
+* Image View with vectors to display our charager
+
+
+# Dean
+
+
+# Brian
+
+
+# Ashley
+
+
+# Margarita
 
 
 ## Getting Started
