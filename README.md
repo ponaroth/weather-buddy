@@ -167,6 +167,6 @@ Run it on any Android device or emulator that has Android 7.0 or above.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Kotlin](https://kotlinlang.org/docs/reference/) - Kotlin Programming Language
+* [OpenWeatherMap.org](https://openweathermap.org/) - Free Weather API
+* [Android Studio](https://developer.android.com/studio) - Android IDE
