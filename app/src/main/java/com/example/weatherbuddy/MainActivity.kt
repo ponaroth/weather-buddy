@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         // set on-click listener
         iv_click_me.setOnClickListener {
 
-            Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
             val intent1 = Intent(this, Main2Activity::class.java)//firstActivity
 //                    val value = "value"
             intent1.putExtra("my_variable", CITY)

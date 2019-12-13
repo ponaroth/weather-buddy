@@ -702,6 +702,7 @@ drawable bg_late_morning
 drawable bg_late_night
 drawable bg_morning
 drawable bg_night
+drawable bg_settings
 drawable blue_back
 drawable hamburger_icon
 drawable ic_android_logo

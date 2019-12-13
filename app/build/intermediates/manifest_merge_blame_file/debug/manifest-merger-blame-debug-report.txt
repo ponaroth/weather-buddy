@@ -6,82 +6,82 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml
+8-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml
+9-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:7:5-33:19
+13-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:7:5-33:19
 14        android:allowBackup="true"
-14-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:8:9-35
+14-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.2] /Users/dean/.gradle/caches/transforms-2/files-2.1/68399ff6f7cdf924235d3ad145929c6a/core-1.0.2/AndroidManifest.xml:22:18-86
+15-->[androidx.core:core:1.0.2] /Users/owner/.gradle/caches/transforms-2/files-2.1/68399ff6f7cdf924235d3ad145929c6a/core-1.0.2/AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:9:9-43
+17-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:10:9-41
+18-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:11:9-54
+19-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:12:9-35
+20-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/AppTheme" >
-22-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:13:9-40
+22-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:13:9-40
 23        <activity
-23-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:14:9-20:20
+23-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:9-20:20
 24            android:name="com.example.weatherbuddy.Main2Activity"
-24-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:14:19-72
+24-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:14:19-72
 25            android:parentActivityName="com.androdocs.weatherbuddy.MainActivity" >
-25-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:15:13-55
+25-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:15:13-55
 26
 27            <!-- The meta-data tag is required if you support API level 15 and lower -->
 28            <meta-data
-28-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:17:13-19:49
+28-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:17:13-19:49
 29                android:name="android.support.PARENT_ACTIVITY"
-29-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:18:17-63
+29-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:18:17-63
 30                android:value=".MainActivity" />
-30-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:19:17-46
+30-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:19:17-46
 31        </activity>
 32        <activity
-32-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:21:9-29:20
+32-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:21:9-29:20
 33            android:name="com.androdocs.weatherbuddy.MainActivity"
-33-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:22:13-41
+33-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:22:13-41
 34            android:screenOrientation="portrait" >
-34-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:23:13-49
+34-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:23:13-49
 35            <intent-filter>
-35-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:24:13-28:29
+35-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:24:13-28:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:25:17-69
-36-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:25:25-66
+36-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:25:17-69
+36-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:25:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:27:17-77
-38-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:27:27-74
+38-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:27:17-77
+38-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:27:27-74
 39            </intent-filter>
 40        </activity>
 41
 42        <meta-data
-42-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:30:9-32:57
+42-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:30:9-32:57
 43            android:name="preloaded_fonts"
-43-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:31:13-43
+43-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:31:13-43
 44            android:resource="@array/preloaded_fonts" />
-44-->/Users/dean/Desktop/Android Programming/weather-buddy/app/src/main/AndroidManifest.xml:32:13-54
+44-->/Users/owner/Desktop/weather-buddy/app/src/main/AndroidManifest.xml:32:13-54
 45
 46        <provider
-46-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dean/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+46-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
 47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-47-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dean/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+47-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
 48            android:authorities="com.example.weatherbuddy.lifecycle-process"
-48-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dean/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+48-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
 49            android:exported="false"
-49-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dean/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+49-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
 50            android:multiprocess="true" />
-50-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/dean/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+50-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/owner/.gradle/caches/transforms-2/files-2.1/3ef3525d7b47ab95914a693a7c1e023c/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
 51    </application>
 52
 53</manifest>
