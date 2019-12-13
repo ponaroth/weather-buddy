@@ -949,7 +949,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_main2
-layout activity_main3
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -964,7 +963,6 @@ menu popup_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation
-raw city_list
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
