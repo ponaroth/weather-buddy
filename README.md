@@ -25,7 +25,7 @@ What we used for our app:
  * Implement API in our Android app
  * Load data from API and put them onto display
  
- API sample:
+ API response sample:
  ```
  {
     "coord": {
