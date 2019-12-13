@@ -26,6 +26,7 @@ import java.text.SimpleDateFormat
 
 class MainActivity : AppCompatActivity() {
 
+    var newDate = ""
     var CITY: String = "Los Angeles, US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
     var weatherID = "-99"
@@ -117,7 +118,7 @@ class MainActivity : AppCompatActivity() {
 
             val newPattern = "HH"
             newTime.applyPattern(newPattern)
-            var newDate = newTime.format(Date())
+            newDate = newTime.format(Date())
             Log.i("MainActivity", "Hour: $newDate")
 
             getBackground(newDate.toInt())
@@ -267,16 +268,16 @@ class MainActivity : AppCompatActivity() {
         else if(timeBackground in 9..11){
             binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_morning)
         }
-        else if(timeBackground in 12..3){
+        else if(timeBackground in 12..15){
             binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_afternoon)
         }
-        else if(timeBackground in 4..5){
+        else if(timeBackground in 16..17){
             binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_afternoon)
         }
-        else if(timeBackground in 6..7){
+        else if(timeBackground in 18..19){
             binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_evening)
         }
-        else if(timeBackground in 8..12){
+        else if(timeBackground in 20..22){
             binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_night)
         }
         else {
