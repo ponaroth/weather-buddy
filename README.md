@@ -20,9 +20,29 @@ What we used for our app:
 # Brian
 
 ### Tasks:
- * Design app character (Buddy)
- * Create app design (Main Fragment)
- * Find Wallpapers to use with app
+* Design app character (Buddy)
+* Create app design (Main Fragment)
+* Find wallpapers to use with app for different times of the day
+* Find icons to use for app conditions
+
+### The Character Design:
+<div>
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/bear_logo.png" width="30%" style="float: left">
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/buddy_logo_umbrella.png" width="40%" style="float: left">
+</div>
+
+Goal with virtual character: 
+* We wanted to make our app different from the other weather apps
+* Character should move around (When it rains, takes out umbrella)
+* Character should give you information about the day
+
+I did not have time to animate the character
+
+### The Wallpapers for Day-Times:
+
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/8_bit_day.png" width="80%">
+
+
 
 # Ashley
 
