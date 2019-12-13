@@ -31,7 +31,11 @@ What we used for our app:
 <img src="https://github.com/bhern154/bhern154.github.io/blob/master/buddy_logo_umbrella.png" width="40%" style="float: left">
 </div>
 
+<br>
+I created this with objects using Adobe Illustrator
+<br>
 Goal with virtual character: 
+
 * We wanted to make our app different from the other weather apps
 * Character should move around (When it rains, takes out umbrella)
 * Character should give you information about the day
@@ -41,7 +45,27 @@ I did not have time to animate the character
 ### The Wallpapers for Day-Times:
 
 <img src="https://github.com/bhern154/bhern154.github.io/blob/master/8_bit_day.png" width="80%">
+<br>
+These 8 images change depending on the time of the day. 
+<br>
 
+### Icons:
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/weather_icons.png" width="80%">
+<br>
+The weather icons should change depending on the weather condition returned by the API. 
+<br>
+
+### App Design:
+
+
+
+<br>
+Information displayed from API:
+* Current weather (Degrees in fahrenheit)
+* Min/max weather in the day
+* Current weather conditions (Sunny, rainy, windy)
+<br>
+It has a textClock to display the clock in real time.
 
 
 # Ashley
