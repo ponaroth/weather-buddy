@@ -80,6 +80,8 @@ It has a textClock to display the clock in real time.
  
  ### Custom ImageView
  
+ <img src="https://raw.githubusercontent.com/ajetty/Images/master/BearLayers.gif" ALIGN=”right”>
+ 
  ### Array Map
  
  ### ViewModel
