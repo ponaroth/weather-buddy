@@ -103,8 +103,8 @@ It has a textClock to display the clock in real time.
  
  ### ViewModel:
  
- <img src="https://github.com/ajetty/Images/blob/master/mvvm.png">
- 
+<img src="https://github.com/ajetty/Images/blob/master/mvvm.png">
+<p>ViewModel has mutable live data that stores the changing weather condition, temperature, and humidity values that are supplied and updated by the weather API. ViewModel observes these values and when any of them change value tells the custom ImageView to update the drawable layer 'Buddy' with the sent value of the changed variable from ViewModel using the array map.</p>
 
 # Margarita
 
