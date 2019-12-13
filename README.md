@@ -24,6 +24,53 @@ What we used for our app:
  * Find free weather API
  * Implement API in our Android app
  * Load data from API and put them onto display
+ 
+ API sample:
+ ```
+ {
+    "coord": {
+        "lon": -118.24,
+        "lat": 34.05
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 56.08,
+        "feels_like": 55.17,
+        "temp_min": 51.01,
+        "temp_max": 60.8,
+        "pressure": 1021,
+        "humidity": 72
+    },
+    "visibility": 11265,
+    "wind": {
+        "speed": 0.49,
+        "deg": 353
+    },
+    "clouds": {
+        "all": 1
+    },
+    "dt": 1576214807,
+    "sys": {
+        "type": 1,
+        "id": 3694,
+        "country": "US",
+        "sunrise": 1576162150,
+        "sunset": 1576197861
+    },
+    "timezone": -28800,
+    "id": 5368361,
+    "name": "Los Angeles",
+    "cod": 200
+}
+ ```
 
 # Brian
 
