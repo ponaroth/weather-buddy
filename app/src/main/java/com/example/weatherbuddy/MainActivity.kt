@@ -227,7 +227,7 @@ class MainActivity : AppCompatActivity() {
                 binding.dateText.text = CITY
 
 
-                if (weatherMain.contains("Rain", ignoreCase = true)) {
+                if (weatherMain.contains("Rain", ignoreCase = true) || weatherMain.contains("Drizzle", ignoreCase = true)) {
                     binding.imageView2.setImageResource(rain)
 
                     }
