@@ -78,13 +78,20 @@ It has a textClock to display the clock in real time.
  
  <img src="https://raw.githubusercontent.com/ajetty/Images/master/BearAnimate.gif">
  
- ### Custom ImageView
+ ### Custom ImageView:
  
- <img src="https://raw.githubusercontent.com/ajetty/Images/master/BearLayers.gif" ALIGN=”right”>
+<img src="https://raw.githubusercontent.com/ajetty/Images/master/BearLayers.gif"><p>A drawable layer containing the vector xml files of Buddy's images that make up the whole was created in custom ImageView and the widget itself was given this drawable layer as it's foreground drawable source.</p>
+
+<p>Because custom ImageView is extended from ImageView, it can be used in a layout file. It is a widget.</p>
+<p>Custom ImageView also has an instance of an array map and methods to call on this array map when an observed variable from ViewModel is changed.</p>
+
+* Buddy's head color represents temperature.
+* His body color represents a weather condition.
+* His arm's body color represents the humidity.
  
- ### Array Map
+ ### Array Map:
  
- ### ViewModel
+ ### ViewModel:
  
  <img src="https://github.com/ajetty/Images/blob/master/mvvm.png">
  
