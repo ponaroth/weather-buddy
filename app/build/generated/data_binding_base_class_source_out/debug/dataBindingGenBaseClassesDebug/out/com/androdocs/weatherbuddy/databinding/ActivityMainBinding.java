@@ -11,6 +11,7 @@ import android.widget.TextClock;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -32,6 +33,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final ImageView arrowUp;
+
+  @NonNull
+  public final ConstraintLayout contrainLayout;
 
   @NonNull
   public final TextView dateText;
@@ -80,15 +84,16 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView address, MyImageView androidAvatar, ImageView arrowDown, ImageView arrowUp,
-      TextView dateText, TextClock digitalClock, TextView errorText, ImageView hamburgermenu,
-      TextView humidity, ImageView imageView2, ProgressBar loader, TextView maxTemp,
-      TextView minTemp, LinearLayout overviewContainer, TextView status, TextView temp,
-      TextView wind) {
+      ConstraintLayout contrainLayout, TextView dateText, TextClock digitalClock,
+      TextView errorText, ImageView hamburgermenu, TextView humidity, ImageView imageView2,
+      ProgressBar loader, TextView maxTemp, TextView minTemp, LinearLayout overviewContainer,
+      TextView status, TextView temp, TextView wind) {
     super(_bindingComponent, _root, _localFieldCount);
     this.address = address;
     this.androidAvatar = androidAvatar;
     this.arrowDown = arrowDown;
     this.arrowUp = arrowUp;
+    this.contrainLayout = contrainLayout;
     this.dateText = dateText;
     this.digitalClock = digitalClock;
     this.errorText = errorText;

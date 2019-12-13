@@ -1,52 +1,56 @@
 package com.androdocs.weatherbuddy
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import com.androdocs.weatherbuddy.databinding.ActivityMainBinding
 import com.example.weatherbuddy.AvatarViewModel
 import com.example.weatherbuddy.Main2Activity
-import kotlinx.android.synthetic.main.activity_main.view.*
 import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.ByteArrayOutputStream
-import java.io.InputStreamReader
-import java.io.StringWriter
 import java.net.URL
 import java.util.*
 import kotlin.math.roundToInt
-import android.R.attr.country
-import android.graphics.ColorSpace
-import android.util.Log
-import org.json.JSONArray
-import android.R.string
-
-
+import com.androdocs.weatherbuddy.R.drawable.snow
+import com.androdocs.weatherbuddy.R.drawable.rain
+import java.text.SimpleDateFormat
 
 
 class MainActivity : AppCompatActivity() {
 
-    var CITY: String = "Los Angeles,US"
+    var CITY: String = "Los Angeles, US"
     val API: String = "c5bc0d9cc9950915b3cafa0c4a956dc5"
+    var weatherID = "-99"
 
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var viewModel: AvatarViewModel
 
+    //for current time
+    private lateinit var simpleDateFormat: SimpleDateFormat
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val pattern = "HH"
+        var simpleDateFormat = SimpleDateFormat(pattern)
+        var date = simpleDateFormat.format(Date())
+        Log.i("MainActivity", "Hour: $date")
 
         //bind activity_main.xml
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val extras = intent.extras
-
 
         if (extras != null) {
             val value = extras.getString("my_variable")
@@ -66,73 +70,6 @@ class MainActivity : AppCompatActivity() {
 
         weatherTask().execute()
 
-//        val text = resources.openRawResource(R.raw.city_list)
-//            .bufferedReader().use { it.readText() }
-////        val name = []
-//        val myList = arrayListOf<String>()
-////        val Item = List<string>()
-//        var i = 0
-//
-//
-//        var jsonArray = JSONArray(text)
-//        for (jsonIndex in 0..(jsonArray.length() - 1)) {
-////            Log.d("JSON", jsonArray.getJSONObject(jsonIndex).getString( "name") )
-////            myList.append(jsonArray.getJSONObject(jsonIndex).getString( "name"))
-//            myList.add( i.toString() + " "+ jsonArray.getJSONObject(jsonIndex).getString( "name")+ ", "+jsonArray.getJSONObject(jsonIndex).getString( "country"))
-//
-//            i++
-//        }
-//        System.out.println(myList)
-//        val `in`: String
-//        val reader = JSONObject(text)
-//
-//        val sys = reader.getJSONObject("country")
-//        print(sys)
-//        country = sys.getString("country").toInt()
-
-//        for (i in 0 until text.length()) {
-//            val json_data = jsonArray.getJSONObject(i)
-//            name[i] = json_data.getString("tienda")
-//
-//        }
-//
-//        var tags = ArrayList<String>()
-//        // Add the Tag to List
-//        tags.add("Android")
-//        tags.add("Angular")
-//        //Create a Object of Post
-//        var post = Post("Json Tutorial", "www.nplix.com", "Pawan Kumar", tags)
-//        //Create a Object of Gson
-//        var gson = Gson()
-//        //Convert the Json object to JsonString
-//        var jsonString:String = gson.toJson(post)
-
-
-//        text.name
-
-
-// i being the counter of your loop
-//        String catId = text.get(i).get("name");
-//        if(catId == 3) {
-//            ... your code
-//        }
-        //        System.out.println(text)
-
-//        val `is` = resources.openRawResource(R.raw.city_list)
-//        val writer = StringWriter()
-//        val buffer = CharArray(1024)
-//        try {
-//            val reader = BufferedReader(InputStreamReader(`is`, "UTF-8"))
-//            var n: Int
-//            while ((n = reader.read(buffer)) != -1) {
-//                writer.write(buffer, 0, n)
-//            }
-//        } finally {
-//            `is`.close()
-//        }
-//
-//        val jsonString = writer.toString()
-
         //Initialize AvatarViewModel
         viewModel = ViewModelProviders.of(this).get(AvatarViewModel::class.java)
 
@@ -143,6 +80,52 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
 
+        viewModel.humidity.observe(this, androidx.lifecycle.Observer { newHumidity: String ->
+
+            //get rid of the "Humidity: " part of the String
+            val finalHumidity = newHumidity.removeRange(0, 10)
+
+            //Log.i("MainActivity", "$finalHumidity")
+
+            binding.androidAvatar.setRightArmColor(finalHumidity)
+            binding.androidAvatar.setLeftArmColor(finalHumidity)
+        })
+
+        viewModel.temperature.observe(this, androidx.lifecycle.Observer { newTemperature: String ->
+
+            //get rid of the "Humidity: " part of the String
+            val finalTemperature = newTemperature.substring(0, newTemperature.lastIndex)
+
+            //Log.i("MainActivity", "Here is the final temp: $finalTemperature")
+
+            binding.androidAvatar.setHeadColor(finalTemperature)
+        })
+
+        viewModel.weatherCondition.observe(this, androidx.lifecycle.Observer { newCondition: String ->
+
+            //get rid of the "Humidity: " part of the String
+            //val finalCondition = newCondition.removeRange(0, 10)
+
+            //Log.i("MainActivity", "Here is the final: $newCondition")
+
+            binding.androidAvatar.setBodyColor(newCondition)
+        })
+
+        viewModel.timeBackground.observe(this, androidx.lifecycle.Observer { newTime: SimpleDateFormat ->
+
+
+
+            val newPattern = "HH"
+            newTime.applyPattern(newPattern)
+            var newDate = newTime.format(Date())
+            Log.i("MainActivity", "Hour: $newDate")
+
+            getBackground(newDate.toInt())
+        })
+
+        viewModel.timeBackground.setValue(simpleDateFormat)
+
+
         // get reference to ImageView
 //        val iv_click_me = findViewById(R.id.hamburgermenu) as ImageView
         val iv_click_me = binding.hamburgermenu
@@ -150,7 +133,7 @@ class MainActivity : AppCompatActivity() {
         // set on-click listener
         iv_click_me.setOnClickListener {
 
-            Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "You Clicked : ", Toast.LENGTH_SHORT).show()
             val intent1 = Intent(this, Main2Activity::class.java)//firstActivity
 //                    val value = "value"
             intent1.putExtra("my_variable", CITY)
@@ -176,6 +159,7 @@ class MainActivity : AppCompatActivity() {
 //            popup.show()//showing popup menu
 //            We end code here for menu
         }
+
 
 
     }
@@ -227,8 +211,9 @@ class MainActivity : AppCompatActivity() {
                 val humidity = "Humidity: " + main.getString("humidity")
                 val windSpeed = "Wind: " + wind.getString("speed")
                 val weatherDescription = weather.getString("description")
-
+                val weatherMain = weather.getString("main")
                 val address = jsonObj.getString("name")+", "+sys.getString("country")
+                weatherID = weather.getString("id")
 
                 // Populating extracted data into our views
                 binding.address.text = address
@@ -239,6 +224,19 @@ class MainActivity : AppCompatActivity() {
                 binding.wind.text = windSpeed
                 binding.humidity.text = humidity
                 binding.dateText.text = CITY
+
+
+                if (weatherMain.contains("Rain", ignoreCase = true)) {
+                    binding.imageView2.setImageResource(rain)
+
+                    }
+
+                if (weatherMain.contains("Snow", ignoreCase = true)) {
+                    binding.imageView2.setImageResource(snow)
+
+                }
+
+
 
                 // Views populated, Hiding the loader, Showing the main design
                 binding.loader.visibility = View.GONE
@@ -251,6 +249,38 @@ class MainActivity : AppCompatActivity() {
                 binding.errorText.visibility = View.GONE
             }
 
+
+            viewModel.humidity.setValue(binding.humidity.text.toString())
+            viewModel.temperature.setValue(binding.temp.text.toString())
+            viewModel.weatherCondition.setValue(weatherID)
+
+
+        }
+    }
+
+
+    private fun getBackground(timeBackground: Int) {
+
+        if(timeBackground in 6..8){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_morning)
+        }
+        else if(timeBackground in 9..11){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_morning)
+        }
+        else if(timeBackground in 12..3){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_afternoon)
+        }
+        else if(timeBackground in 4..5){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_afternoon)
+        }
+        else if(timeBackground in 6..7){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_evening)
+        }
+        else if(timeBackground in 8..12){
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_night)
+        }
+        else {
+            binding.contrainLayout.background = ContextCompat.getDrawable(this, R.drawable.bg_late_night)
         }
     }
 }

@@ -1,8 +1,25 @@
 ![Picture](https://github.com/bhern154/bhern154.github.io/blob/master/banner.jpg)
 
-# weather-buddy
+# Weather Buddy Android App
 
-Weather app with virtual pet
+A weather app with virtual pet to keep you company!
+
+What we used for our app:
+* Weather API
+* Linear Constraints
+* Image View with vectors to display our charager
+
+
+# Dean
+
+
+# Brian
+
+
+# Ashley
+
+
+# Margarita
 
 
 ## Getting Started
@@ -15,29 +32,24 @@ git clone
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+```
+Download Android Studio 
+```
+https://developer.android.com/
 
 ```
-Give examples
+Download Java Development Kit
 ```
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+Install Android studio
+Install JDK
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 

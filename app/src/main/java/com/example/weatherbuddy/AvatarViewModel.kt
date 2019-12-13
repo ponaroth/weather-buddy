@@ -1,5 +1,6 @@
 package com.example.weatherbuddy
 
+import android.graphics.drawable.Drawable
 import android.os.Parcel
 import android.os.Parcelable
 import android.util.Log
@@ -8,9 +9,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.androdocs.weatherbuddy.R
-import kotlinx.android.synthetic.main.activity_main.view.*
-
-//practice change
+import java.text.SimpleDateFormat
 
 
 /*
@@ -21,33 +20,25 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 */
 class AvatarViewModel : ViewModel() {
 
+
     //The current avatar ImageView
-    private var _avatar = MutableLiveData<MyImageView>()
-    val avatar: LiveData<MyImageView>
-        get() = _avatar
+    val avatar: MutableLiveData<Drawable> = MutableLiveData<Drawable>()
 
     //The current weather condition
-    private var _weatherCondition = MutableLiveData<String>()
-    val weatherCondition: LiveData<String>
-        get() = _weatherCondition
+    val weatherCondition: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current humidity
-    private var _humidity = MutableLiveData<String>()
-    val humidity: LiveData<String>
-        get() = _humidity
+    val humidity: MutableLiveData<String> = MutableLiveData<String>()
 
     //The current temperature
-    private var _temperature = MutableLiveData<String>()
-    val temperature: LiveData<String>
-        get() = _temperature
-
-    init {
-       // _weatherCondition.value = "701"
-    }
+    val temperature: MutableLiveData<String> = MutableLiveData<String>()
 
     override fun onCleared() {
         super.onCleared()
         Log.i("AvatarViewModel", "AvatarViewModel destroyed!")
     }
+
+    //The current Background that depends on Time
+    val timeBackground: MutableLiveData<SimpleDateFormat> = MutableLiveData<SimpleDateFormat>()
 
 }

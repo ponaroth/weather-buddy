@@ -33,8 +33,6 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.status, 17);
     }
     // views
-    @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -49,6 +47,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (com.example.weatherbuddy.MyImageView) bindings[2]
             , (android.widget.ImageView) bindings[14]
             , (android.widget.ImageView) bindings[12]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextClock) bindings[5]
             , (android.widget.TextView) bindings[11]
@@ -63,8 +62,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[8]
             );
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.contrainLayout.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();

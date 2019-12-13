@@ -89,15 +89,15 @@ class Main2Activity : AppCompatActivity() {
 
 
         click_me.setOnClickListener {
-            Toast.makeText(this@Main2Activity, "BUTTON CLICKED", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@Main2Activity, "BUTTON CLICKED", Toast.LENGTH_SHORT).show()
 //            var et = findViewById<TextView>(R.id.inputEditText).text as TextView
             var et= inputEditText.text.toString()
-            Toast.makeText(this, et, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, et, Toast.LENGTH_SHORT).show()
 //            current_location.setText(et)
             newLocation = et
 
             if(hello != ""){
-                Toast.makeText(this@Main2Activity, "Changed country to", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@Main2Activity, "Changed country to", Toast.LENGTH_SHORT).show()
 
 
             }
@@ -145,12 +145,12 @@ class Main2Activity : AppCompatActivity() {
 
 
         activ_1.setOnClickListener{
-            Toast.makeText(getApplicationContext(), "OLD LOCATION " + oldLocation,  Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "OLD LOCATION " + oldLocation,  Toast.LENGTH_SHORT).show();
 
             if(oldLocation != newLocation && count == 1){
                 System.out.println("old location: "+ oldLocation)
                 System.out.println("new location: "+ newLocation)
-                Toast.makeText(getApplicationContext(), "In if ",  Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "In if ",  Toast.LENGTH_SHORT).show();
 
                 val intent1 = Intent(this, MainActivity::class.java)//firstActivity
 //                    val value = "value"
