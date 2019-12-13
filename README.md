@@ -15,7 +15,6 @@ git clone
 
 ### Prerequisites
 
-
 ```
 Download Android Studio 
 ```
@@ -30,21 +29,10 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+Install Android studio
+Install JDK
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
