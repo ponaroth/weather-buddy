@@ -78,9 +78,13 @@ It has a textClock to display the clock in real time.
  
  <img src="https://raw.githubusercontent.com/ajetty/Images/master/BearAnimate.gif">
  
- ###Custom ImageView
- ###Array Map
- ###ViewModel
+ ### Custom ImageView
+ 
+ ### Array Map
+ 
+ ### ViewModel
+ 
+ <img src="https://github.com/ajetty/Images/blob/master/mvvm.png">
  
 
 # Margarita
