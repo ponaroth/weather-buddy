@@ -84,16 +84,16 @@ It has a textClock to display the clock in real time.
  * Have API update the weather conditions
  
 The settings can be accessed by clicking on the top settings icon located at the top left hand side of the screen.
-https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/icons8-settings-64.png
+<img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/icons8-settings-64.png">
 
 The settings page is responisble for changing the location used in the app. 
 
 If a location is valid it will change the location on the homepage. 
-https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.53.50%20AM.png
+<img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.53.50%20AM.png">
 
 If the location is not valid, or blank the location will remain the same as the previous location, and error message will also display on the settings screen telling you if the location is invalid and asking you to refer to all the valid locations located at the openweather api website. 
 
-https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.54.10%20AM.png
+<img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.54.10%20AM.png">
 
 # Ashley
 
