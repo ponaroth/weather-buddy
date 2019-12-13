@@ -75,6 +75,8 @@ It has a textClock to display the clock in real time.
  * Have the character adapt to the weather (Changes color and state)
  * Have the wallpaper adapt to the time of day 
  * Have the icons adapt to weather conditions
+ 
+ <img src="https://raw.githubusercontent.com/ajetty/Images/master/BearAnimate.gif">
 
 # Margarita
 
@@ -94,10 +96,6 @@ If a location is valid it will change the location on the homepage.
 If the location is not valid, or blank the location will remain the same as the previous location, and error message will also display on the settings screen telling you if the location is invalid and asking you to refer to all the valid locations located at the openweather api website. 
 
 <img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.54.10%20AM.png">
-
-# Ashley
-
-<https://raw.githubusercontent.com/ajetty/Images/master/BearAnimate.gif">
 
 
 
