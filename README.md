@@ -50,6 +50,20 @@ Goal with virtual character:
 
 I did not have time to animate the character
 
+### App Design:
+
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/app_design.png" width="40%">
+<br/>
+Information displayed from API:
+
+* Current weather (Degrees in fahrenheit)
+* Min/max weather in the day
+* Current weather conditions (Sunny, rainy, windy)
+
+It has a textClock to display the clock in real time.
+
+
+
 ### The Wallpapers for Day-Times:
 
 <img src="https://github.com/bhern154/bhern154.github.io/blob/master/8_bit_day.png" width="80%">
@@ -62,19 +76,6 @@ These 8 images change depending on the time of the day.
 <br>
 The weather icons should change depending on the weather condition returned by the API. 
 <br>
-
-### App Design:
-
-
-
-<br>
-Information displayed from API:
-* Current weather (Degrees in fahrenheit)
-* Min/max weather in the day
-* Current weather conditions (Sunny, rainy, windy)
-<br>
-It has a textClock to display the clock in real time.
-
 
 # Ashley
 
@@ -118,12 +119,15 @@ The settings can be accessed by clicking on the top settings icon located at the
 
 The settings page is responisble for changing the location used in the app. 
 
+<div>
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/settings_one.png" width="30%" style="float: left">
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/settings_two.png" width="30%" style="float: left">
+<img src="https://github.com/bhern154/bhern154.github.io/blob/master/settings_three.png" width="30%" style="float: left">
+</div>
+
 If a location is valid it will change the location on the homepage. 
-<img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.53.50%20AM.png">
-
+<br>
 If the location is not valid, or blank the location will remain the same as the previous location, and error message will also display on the settings screen telling you if the location is invalid and asking you to refer to all the valid locations located at the openweather api website. 
-
-<img src="https://raw.githubusercontent.com/MargaritaNuridj/MargaritaNuridj.github.io/master/images/Screen%20Shot%202019-12-13%20at%2012.54.10%20AM.png">
 
 
 
