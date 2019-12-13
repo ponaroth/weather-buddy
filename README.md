@@ -3,6 +3,7 @@
 # Weather Buddy Android App
 
 A weather app with virtual pet to keep you company!
+This app shows current temperature, weather condition and a virtual pet that change color according to the temperature, humidity, and weather status. 
 
 What we used for our app:
 * Weather API
