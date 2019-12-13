@@ -91,7 +91,9 @@ If a location is valid it will change the location on the homepage.
 
 If the location is not valid, or blank the location will remain the same as the previous location, and error message will also display on the settings screen telling you if the location is invalid and asking you to refer to all the valid locations located at the openweather api website. 
 
+# Ashley
 
+<img src="https://raw.githubusercontent.com/ajetty/Images/master/BearScreenShot.png">
 
 
 
