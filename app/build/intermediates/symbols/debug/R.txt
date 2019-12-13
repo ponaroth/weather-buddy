@@ -727,10 +727,12 @@ int drawable notification_template_icon_bg 0x7f070077
 int drawable notification_template_icon_low_bg 0x7f070078
 int drawable notification_tile_bg 0x7f070079
 int drawable notify_panel_notification_icon_bg 0x7f07007a
-int drawable settings 0x7f07007b
-int drawable sunny 0x7f07007c
-int drawable tooltip_frame_dark 0x7f07007d
-int drawable tooltip_frame_light 0x7f07007e
+int drawable rain 0x7f07007b
+int drawable settings 0x7f07007c
+int drawable snow 0x7f07007d
+int drawable sunny 0x7f07007e
+int drawable tooltip_frame_dark 0x7f07007f
+int drawable tooltip_frame_light 0x7f070080
 int font abel 0x7f080000
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
