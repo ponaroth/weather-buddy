@@ -101,6 +101,8 @@ It has a textClock to display the clock in real time.
  
  ### Array Map:
  
+<p>An instance of an array map is in the custom ImageView that stores weather conditions, temperature, and humidity values that are given by the OpenWeather API. Each of these key conditions are associated with a color value. An array map was the chosen structure because of its design to be more memory efficent than hashmap for small sizes of data. Even with its slower search speed. We only modify/create the map once so memory allocation is not in consideration.</p>
+ 
  ### ViewModel:
  
  <img src="https://github.com/ajetty/Images/blob/master/mvvm.png">
