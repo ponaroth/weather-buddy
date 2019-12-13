@@ -4,22 +4,43 @@
 
 A weather app with virtual pet to keep you company!
 
-What we used for our app:
+### What we used for our app:
 * Weather API
 * Linear Constraints
-* Image View with vectors to display our charager
+* Image View with vectors to display our character
 
 
 # Dean
 
+### Tasks:
+* Find free weather API
+* Implement API in our Android app
+* Learn how to call for data from API for us to display
 
 # Brian
 
+### Tasks:
+* Design app character (Buddy)
+* Create app design (Main Fragment)
+* Find Wallpapers to use with app
 
 # Ashley
 
+### Tasks:
+* Vectorize the character to display on app
+* Have the character adapt to the weather (Changes color and state)
+* Have the wallpaper adapt to the time of day 
+* Have the icons adapt to weather conditions
 
 # Margarita
+
+### Tasks:
+* Create settings fragment to update/change the city
+* Have the user input update the location for the API
+* Have API update the weather conditions
+
+
+
 
 
 ## Getting Started
