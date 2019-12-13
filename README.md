@@ -11,10 +11,10 @@ What we used for our app:
 
 ## Contributors
 
-Ponaroth Eab
-Ashley Jetty
-Brian Hernadez
-Magarita Nuridjanian
+* Ponaroth Eab
+* Ashley Jetty
+* Brian Hernadez
+* Magarita Nuridjanian
 
 
 
