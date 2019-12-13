@@ -85,6 +85,9 @@ class Main2Activity : AppCompatActivity() {
 
         // set on-click listener
 
+        var count = 0
+
+
         click_me.setOnClickListener {
             Toast.makeText(this@Main2Activity, "BUTTON CLICKED", Toast.LENGTH_SHORT).show()
 //            var et = findViewById<TextView>(R.id.inputEditText).text as TextView
@@ -106,14 +109,18 @@ class Main2Activity : AppCompatActivity() {
 
 
 
+
+
             val thread = Thread(Runnable {
                 try{
 
                     response = URL("https://api.openweathermap.org/data/2.5/weather?q=$newLocation&units=imperial&appid=$API").readText(
                         Charsets.UTF_8)
                     current_location.setText(newLocation)
+                    count = 1
 
                 }catch (e: Exception){
+                    count = 0
                     response = null
                     var city_file = URL("http://bulk.openweathermap.org/sample/ for valid downloads")
 //                    var city_file = "<a href=http://bulk.openweathermap.org/sample/ >Google</a>"
@@ -140,7 +147,7 @@ class Main2Activity : AppCompatActivity() {
         activ_1.setOnClickListener{
             Toast.makeText(getApplicationContext(), "OLD LOCATION " + oldLocation,  Toast.LENGTH_SHORT).show();
 
-            if(oldLocation != newLocation){
+            if(oldLocation != newLocation && count == 1){
                 System.out.println("old location: "+ oldLocation)
                 System.out.println("new location: "+ newLocation)
                 Toast.makeText(getApplicationContext(), "In if ",  Toast.LENGTH_SHORT).show();
@@ -154,6 +161,13 @@ class Main2Activity : AppCompatActivity() {
 
 
 
+            }
+
+            else{
+                val intent1 = Intent(this, MainActivity::class.java)//firstActivity
+//                    val value = "value"
+                intent1.putExtra("my_variable", oldLocation)
+                startActivity(intent1)
             }
 
 //            var CITY: String = "London,GB"
