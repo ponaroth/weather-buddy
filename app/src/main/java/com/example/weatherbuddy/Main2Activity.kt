@@ -32,13 +32,13 @@ class Main2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 //        private lateinit var binding: ActivityMain2Binding
 
-        val text = resources.openRawResource(R.raw.city_list)
-            .bufferedReader().use { it.readText() }
-//        val name = []
-        val myList = arrayListOf<String>()
-//        val Item = List<string>()
-        var i = 0
-        var myList1 = ""
+//        val text = resources.openRawResource(R.raw.city_list)
+//            .bufferedReader().use { it.readText() }
+////        val name = []
+//        val myList = arrayListOf<String>()
+////        val Item = List<string>()
+//        var i = 0
+//        var myList1 = ""
 
 //        findViewById<TextView>(R.id.countries).text = myList1
 //
